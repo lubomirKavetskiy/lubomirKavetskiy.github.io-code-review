@@ -1,0 +1,789 @@
+@charset "utf-8";
+
+.images-links {
+  margin-top: 167px;
+
+  .row {
+    margin-right: -30px;
+    margin-left: -30px;
+
+    .images-links__bloc {
+
+      a {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 40px 0 50px;
+
+        height: 270px;
+
+        border: 1px solid #ccc;
+
+        img {
+          display: block;
+        }
+
+        span {
+          display: block;
+          font-size: 18px;
+          font-weight: 600;
+          color: #333;
+          text-align: center;
+        }
+      }
+
+      &:nth-child(3){
+
+        a {
+
+          img {
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.calculation-wages.admin-admin {
+  padding-top: 47px;
+
+  .row {
+
+    h2 {
+      margin-bottom: 0px;
+      padding: 0 0 16px;
+      text-align: left;
+      font-size: 28px;
+      font-weight: 300;
+      border-bottom: 2px solid #ea2f2f;
+    }
+
+    form {
+      padding: 3px 0 0;
+
+      .inputs-enter-number {
+        margin-top: 53px;
+
+        .number-block {
+
+          label {
+            margin-right: 78px;
+
+            text-align: center;
+          }
+
+          input {
+            margin-right: 30px;
+            padding: 0 30px;
+            display: inline-block;
+            width: 270px;
+            height: 68px;
+            font-size: 25px;
+            color: #000;
+          }
+
+          span {
+            display: inline-block;
+            font-size: 24px;
+            color: #333;
+            text-transform: uppercase;
+          }
+
+          &:last-child {
+            input {
+              font-weight: 300;
+              color: #333;
+            }
+          }
+        }
+
+        img {
+          margin: 25px 119px 19px;
+          display: block;
+        }
+      }
+    }
+
+    .hidden-result-calculator.admin-admin {
+      padding-top: 51px;
+
+      display: block;
+
+      .we-expect {
+        padding-right: 15px;
+
+        h5 {
+          font-size: 16px;
+          font-weight: 600;
+          text-align: center;
+        }
+
+        .we-expect__list {
+          margin-top: 22px;
+
+          li {
+            padding: 0 6px;
+
+            span {
+              font-size: 14px;
+            }
+          }
+        }
+
+      }
+
+      .how-much-it-cost {
+        padding-right: 0;
+        padding-left: 30px;
+
+        h5 {
+          font-size: 16px;
+          font-weight: 600;
+          text-align: center;
+        }
+
+        p {
+          font-size: 14px;
+          text-align: center;
+          line-height: 1.2;
+        }
+
+        .donut-container {
+          margin: 0;
+          //
+          position: relative;
+
+          img {
+            margin: 35px 0;
+          }
+
+          #donut {
+
+            svg {
+              top: 0!important;
+              left: 0!important;
+
+              width: 364px!important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include adaptive(max1199) {
+  .header.admin-admin {
+
+    .dropdown-list {
+
+      ul {
+        top: 82px;
+        width: 260px;
+      }
+    }
+  }
+
+  .images-links {
+
+    .row {
+
+      .images-links__bloc {
+
+        a {
+
+          span {
+            font-size: 16.5px;
+          }
+        }
+      }
+    }
+  }
+
+  .calculation-wages.admin-admin {
+
+    .row {
+
+      h2 {
+        padding: 0 0 15px;
+        font-size: 26px;
+        text-align: center;
+      }
+
+      form {
+
+        .inputs-enter-number {
+          margin-top: 62px;
+          margin-bottom: 30px;
+
+          text-align: center;
+
+          .number-block {
+
+            label {
+              margin-right: 72px;
+
+              //text-align: center;
+            }
+
+            input {
+              height: 66px;
+              font-size: 24px;
+            }
+
+            span {
+              font-size: 22px;
+            }
+          }
+
+          img {
+            margin: 25px auto 20px;
+            padding-right: 77px;
+          }
+        }
+      }
+
+      .hidden-result-calculator.admin-admin {
+        padding-top: 51px;
+
+        display: block;
+
+        .we-expect {
+
+          h5 {
+            font-size: 16px;
+            text-align: center;
+          }
+
+          .we-expect__list {
+            margin-top: 22px;
+
+            li {
+              padding: 0 6px;
+
+              span {
+                font-size: 14px;
+              }
+            }
+          }
+
+        }
+
+        .how-much-it-cost {
+          padding-right: 15px;
+          padding-left: 15px;
+
+          h5 {
+            font-size: 16px;
+            text-align: center;
+          }
+
+          p {
+            font-size: 14px;
+            text-align: center;
+            line-height: 1.2;
+          }
+
+          .donut-container {
+            margin: 0;
+            //
+            position: relative;
+
+            img {
+              margin: 35px 0;
+            }
+
+            #donut {
+
+              svg {
+                left: 46px!important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include adaptive(max991) {
+  .header.admin-admin {
+
+    .dropdown-list {
+
+      ul {
+        top: 75px;
+        width: 250px;
+
+        li {
+          a {
+            height: 55px;
+          }
+        }
+      }
+    }
+  }
+
+  .images-links {
+    margin-top: 140px;
+
+    .row {
+      margin-right: -24px;
+      margin-left: -24px;
+
+      .images-links__bloc {
+
+        a {
+          padding: 30px 0;
+          height: 230px;
+
+          span {
+            font-size: 16px;
+          }
+        }
+
+        &:nth-child(3){
+
+          a {
+
+            img {
+              margin-top: 12px;
+            }
+          }
+        }
+
+        &:first-child {
+          a {
+            span {
+              margin-top: 37px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .calculation-wages.admin-admin {
+    padding-top: 40px;
+
+    .row {
+
+      h2 {
+        padding: 0 0 12px;
+        font-size: 24px;
+      }
+
+      form {
+
+        .inputs-enter-number {
+          margin-top: 60px;
+          margin-bottom: 10px;
+
+          .number-block {
+
+            input {
+              height: 66px;
+              font-size: 24px;
+            }
+
+            span {
+              //  display: inline-block;
+              font-size: 22px;
+            }
+          }
+
+          img {
+            margin: 25px auto 20px;
+            padding-right: 77px;
+          }
+        }
+      }
+
+      .hidden-result-calculator.admin-admin {
+        padding-top: 51px;
+
+        display: block;
+
+        .we-expect {
+
+          h5 {
+            font-size: 16px;
+            text-align: center;
+          }
+
+          .we-expect__list {
+            margin-top: 22px;
+
+            li {
+              padding: 0 6px;
+
+              span {
+                font-size: 14px;
+              }
+            }
+          }
+
+        }
+
+        .how-much-it-cost {
+          padding-right: 15px;
+          padding-left: 15px;
+
+          h5 {
+            font-size: 16px;
+            text-align: center;
+          }
+
+          p {
+            font-size: 14px;
+            text-align: center;
+            line-height: 1.2;
+          }
+
+          .donut-container {
+            margin: 0;
+            position: relative;
+            width: 345px;
+
+            img {
+              margin: 35px 0;
+            }
+
+            #donut {
+
+              svg {
+                left: -8px!important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include adaptive(max767) {
+  .header.admin-admin {
+
+    .switch-language {
+      margin-top: 16px;
+      margin-right: 26px;
+    }
+
+    .dropdown-list {
+
+      ul {
+        top: 74px;
+        width: 245px;
+
+        li {
+          a {
+            height: 50px;
+          }
+        }
+      }
+    }
+  }
+
+  .images-links {
+    margin-top: 130px;
+
+    .row {
+      margin-right: 15px;
+      margin-left: 15px;
+
+      .images-links__bloc {
+        margin-bottom: 30px;
+
+        a {
+          padding: 25px 0;
+          height: 200px;
+
+          span {
+            font-size: 15px;
+          }
+        }
+
+        &:nth-child(3){
+
+          a {
+
+            img {
+              margin-top: 12px;
+            }
+          }
+        }
+
+        &:first-child {
+          a {
+            span {
+              margin-top: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .calculation-wages.admin-admin {
+    padding-top: 15px;
+    padding-bottom: 0;
+
+    .row {
+
+      h2 {
+        padding: 0 0 8px;
+        font-size: 22px;
+      }
+
+      form {
+
+        .inputs-enter-number {
+          margin-top: 50px;
+          margin-bottom: 0;
+
+          .number-block {
+
+            label {
+              margin-right: 70px;
+            }
+
+            input {
+              padding: 0 25px;
+              height: 60px;
+              font-size: 22px;
+            }
+
+            span {
+              font-size: 20px;
+            }
+          }
+
+          img {
+            padding-right: 75px;
+          }
+        }
+      }
+
+      .hidden-result-calculator.admin-admin {
+        padding-top: 45px;
+
+        .we-expect {
+
+          h5 {
+            font-size: 16px;
+            text-align: center;
+          }
+
+          .we-expect__list {
+            margin-top: 22px;
+
+            li {
+              padding: 0 6px;
+
+              span {
+                font-size: 14px;
+              }
+            }
+          }
+
+        }
+
+        .how-much-it-cost {
+          margin-top: 55px;
+
+          .donut-container {
+            width: auto;
+
+            img {
+              margin: 30px 0;
+            }
+
+            #donut {
+
+              svg {
+                top: -5px!important;
+                left: 1px!important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include adaptive(max480) {
+  .header.admin-admin {
+
+    .switch-language {
+      margin-top: 10px;
+      margin-right: 15px;
+    }
+
+    .dropdown-list {
+
+      ul {
+        top: 57px;
+        width: 146px;
+
+        li {
+          a {
+            padding-left: 15px;
+            height: 45px;
+          }
+        }
+      }
+    }
+
+    .c-hamburger {
+      margin-left: 9px;
+    }
+  }
+
+  .images-links {
+    margin-top: 100px;
+
+    .row {
+      margin-right: -15px;
+      margin-left: -15px;
+
+      .images-links__bloc {
+
+        a {
+          padding: 10px 0;
+          height: 160px;
+
+          img {
+            width: 80px;
+          }
+
+          span {
+            font-size: 15px;
+          }
+        }
+
+        &:nth-child(3){
+
+          a {
+
+            img {
+              margin-top: 12px;
+              width: 110px;
+            }
+          }
+        }
+
+        &:first-child {
+          a {
+            span {
+              margin-top: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .calculation-wages.admin-admin {
+    padding-top: 0;
+    padding-bottom: 0;
+
+    .row {
+
+      h2 {
+        padding: 0 0 5px;
+        font-size: 20px;
+      }
+
+      form {
+
+        .inputs-enter-number {
+          margin-top: 55px;
+          margin-bottom: 0;
+
+          .number-block {
+
+            label {
+              margin-right: 52px;
+            }
+
+            input {
+              margin-right: 15px;
+              padding: 0 15px;
+              width: 245px;
+              height: 50px;
+              font-size: 20px;
+            }
+
+            span {
+              font-size: 19px;
+            }
+          }
+
+          img {
+            margin: 15px auto 10px;
+            padding-right: 43px;
+          }
+        }
+      }
+
+      .hidden-result-calculator.admin-admin {
+        margin-bottom: 0;
+        padding-top: 35px;
+
+        .we-expect {
+
+          h5 {
+            font-size: 16px;
+            text-align: center;
+          }
+
+          .we-expect__list {
+            margin-top: 22px;
+
+            li {
+              padding: 0 6px;
+
+              span {
+                font-size: 14px;
+              }
+            }
+          }
+
+        }
+
+        .how-much-it-cost {
+          margin-top: 45px;
+
+          .donut-container {
+            width: auto;
+
+            img {
+              margin: 30px auto;
+              width: 290px;
+            }
+
+            #donut {
+
+              svg {
+                top: -5px!important;
+                left: 1px!important;
+                width: 290px!important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+

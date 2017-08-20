@@ -1,0 +1,167 @@
+@charset "utf-8";
+
+login__header {
+
+
+}
+
+
+.login__wrapper {
+
+  background: green;
+
+  .btn-beoro-3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 180px;
+    height:40px;
+
+    margin: 0 auto;
+
+    font-size: 14px;
+    color: #FFF;
+
+    background-color: red;
+
+    i {
+      font-size: 20px;
+      color: #FFF;
+    }
+
+  }
+
+  .login__content {
+    margin: 5% auto;
+    padding: 50px 100px;
+
+    width:430px;
+    background: #AAA;
+
+    .login__logo {
+      img {
+        width: 100%;
+      }
+
+    }
+
+    #login-validate {
+      width: 100%;
+      text-align: left;
+
+      select.reg_user_selecttype,
+      select.reg_country_selecttype {
+        width: 100%;
+        -webkit-appearance: none;
+        background-image: url('../img/arrow-select.png');
+        background-position: 95% center;
+        background-repeat: no-repeat;
+        -webkit-background-size: 20px;
+        background-size: 20px;
+        // for FF
+        -moz-appearance: none;
+        //text-overflow: '';
+        // for IE
+        -ms-appearance: none;
+        appearance: none !important;
+
+        font-size: 20px;
+        cursor: pointer;
+
+        option {
+          cursor: pointer;
+        }
+      }
+
+      select.reg_user_selecttype::-ms-expand,
+      select.reg_country_selecttype::-ms-expand {
+        display: none;
+      }
+
+      label {
+        width: 100%;
+        text-align: left;
+        font-size: 20px;
+      }
+
+      input {
+        width: 100%;
+
+        font-size: 20px;
+      }
+
+      p {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+      }
+
+      .btn-beoro-3 {
+        margin-right: 30px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 200px;
+        height: 70px;
+        background-color: red;
+
+        font-size: 20px;
+        color: #FFF;
+      }
+
+      a {
+        font-size: 20px;
+        color: #000;
+      }
+    }
+
+    p {
+      font-size: 20px;
+      color: #000;
+
+      a {
+        font-size: 20px;
+        color: #ea2f2f;
+      }
+
+    }
+  }
+}
+
+.login__footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 5%;
+
+  background-color: darkslateblue;
+
+  span {
+    color: #000;
+    font-size: 20px;
+  }
+
+  a {
+    margin-left: 5px;
+    color: #ea2f2f;
+    font-size: 20px;
+  }
+}
+
+
+
+
+
+

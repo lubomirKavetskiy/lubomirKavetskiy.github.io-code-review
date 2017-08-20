@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>admin-scapa-factura</title>
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <link rel="icon" type="image/vnd.microsoft.icon" href="img/favicon.ico">
+        <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+        <script src="js/morris.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+        <div class="page">
+
+            <div class="container-fluid">
+                <div class="row">
+
+                    <nav class="navigation">
+                        <ul>
+                            <li><a href="">Start</a></li>
+                            <li><a href="">Om egenanställning</a></li>
+                            <li><a href="">Om verktyget</a></li>
+                            <li><a href="">Om oss</a></li>
+                            <li><a href="">Kontakt</a></li>
+                        </ul>
+                        <p>Telefon: 026 - 22 22 199</p>
+                        <p>Måndag - Fredag 9:00 - 17:00</p>
+                        <p>Lördagar - Söndagar 10:00 - 15:00</p>
+                        <p>Epost: info@frilansjobbarna.se</p>
+                        <div class="social">
+                            <a class="social__icon facebook_icon" href="#" target="_blank"></a>
+                            <a class="social__icon instagram_icon" href="#" target="_blank"></a>
+                            <a class="social__icon youtube_icon" href="#" target="_blank"></a>
+                            <a class="social__icon google_icon" href="#" target="_blank"></a>
+                            <a class="social__icon twitter_icon" href="#" target="_blank"></a>
+                            <a class="social__icon email_icon" href="#" target="_blank"></a>
+                        </div>
+                    </nav>
+
+                    <header class="header admin">
+                        <div class="container">
+                            <div class="row">
+                                <a class="header__logo logo pull-left" href="#">
+                                    <img src="img/logo.jpg" alt="logo">
+                                </a>
+                                <button class="c-hamburger c-hamburger--htx pull-right" type="button">
+                                    <span>toggle menu</span>
+                                </button>
+                                <div class="dropdown-list pull-right">
+                                    <button id="js-dropdown-list" class="button button-dropdown-list" type="button"><span>Valkomen, </span><span>admin</span>
+                                    </button>
+                                    <ul>
+                                        <li><a href="">My Profile</a></li>
+                                        <li><a href="">Insurance</a></li>
+                                        <li><a href="">My invoices</a></li>
+                                        <li><a href="">My clients</a></li>
+                                        <li><a href="">Settings</a></li>
+                                        <li><a href="">Help</a></li>
+                                        <li><a href="">Logout</a></li>
+                                    </ul>
+                                </div>
+                                <div class="switch-language pull-right clearfix">
+                                    <a href="" class="language__nav language__nav_current">en</a><i class="fa fa-chevron-down"
+                                                                                                    aria-hidden="true"></i>
+                                    <a href="ua/" class="language__nav" style="display: none">sv</a>
+                                </div>
+                            </div><!--.row-->
+                        </div><!--.container-->
+                    </header>
+
+                    <div class="scapa-factura">
+
+                        <div class="container">
+                            <div class="row">
+
+                                <div class="scapa-factura-tabs">
+
+                                    <ul class="tabs-nav-list">
+                                        <li class="active"><a href="#js-scapa-facture-1" data-toggle="tab"><span>1</span><span>Kund och inställningar</span></a></li>
+                                        <li><a href="#js-scapa-facture-2" data-toggle="tab"><span>2</span><span>Kund och inställningar</span></a></li>
+                                        <li><a href="#js-scapa-facture-3" data-toggle="tab"><span>3</span><span>Kund och inställningar</span></a></li>
+                                        <li><a href="#js-scapa-facture-4" data-toggle="tab"><span>4</span><span>Kund och inställningar</span></a></li>
+                                    </ul>
+
+                                    <div class="tab-content">
+
+                                        <div role="tabpanel" class="scapa-facture-1 tab-pane fade in active" id="js-scapa-facture-1">
+                                            <form id="invoice_form" class="clearfix" action="#" method="post" novalidate>
+                                                <div class="wrap-for-form clearfix">
+                                                    <p><a class="create_client" href="#">Skapa ny uppdragsgivare <span>eller</span></a></p>
+
+                                                    <div class="scapa-facture-1__row-upper col-xs-12 clearfix">
+                                                        <div class="col-md-4">
+                                                            <label for="s2_single" class="scapa-facture-1__in-order">Uppdragsgivare<span class="star">&#9913;</span></label>
+                                                            <div class="wrap-select">
+                                                                <select id="s2_single" name="frmClientID" required="">
+                                                                    <option selected="selected" value="">Välj uppdragsgivare</option>
+                                                                    <option value="49" data-name="fgd" data-reference="" data-phone="985956" data-email="dfdg@hrth.rhr" data-country="Norway" data-town="84655612" data-zip="98464" data-address="gfgdzsfasg" data-idnr="6">fgd</option>
+                                                                </select>
+                                                                <img class="arrow-select" src="img/arrow-select.png" alt="arrow-select">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="scapa-facture-1__row-first col-md-4 clearfix">
+                                                        <label for="tempFirst">Referens hos uppdragsgivare<span class="star">&#9913;</span></label>
+                                                        <input id="tempFirst" class="small" name="frmReference" type="text" value="" aria-required="true" aria-invalid="true">
+
+                                                        <label for="tempSecond">Referens Telefon<span class="star">&#9913;</span></label>
+                                                        <input id="tempSecond" class="small" name="frmReferenceTel" type="tel" value="" aria-required="true" aria-invalid="true">
+
+                                                        <label>Referens E-post<span class="star">&#9913;</span></label>
+                                                        <input class="small" name="frmReferenceEmail" type="email" value="" aria-required="true" aria-invalid="true">
+
+                                                        <!--add to #showAddTeammembers_s onchange="showAddTeammembers()"-->
+                                                        <input id="showAddTeammembers_s" type="checkbox">
+                                                        <label class="for-showAddTeammembers_s" for="showAddTeammembers_s"><img class="check-icon-admin" src="img/check-icon-admin.png" alt="check-icon">Arbetskollegor</label>
+                                                        <a href="#"><i class="fa fa-question-circle-o"></i></a>
+
+                                                        <div class="wrap-select select_teammembers end">
+                                                            <select class="add_teammembers_second_select" name="frmClientID" required="">
+                                                                <option selected="selected" value="">Choose teammember</option>
+                                                            </select>
+                                                            <img class="arrow-select" src="img/arrow-select.png" alt="arrow-select">
+                                                            <img class="js-icon-plus-admin" src="img/icon-plus-admin.png" alt="add">
+                                                        </div>
+                                                    </div><!--.scapa-facture-1__row-first-->
+
+                                                    <div class="scapa-facture-1__row-second col-md-4 clearfix">
+                                                        <div>
+                                                            <label for="frmDays" class="scapa-facture-1__in-order">Betalningsvillkor<span class="star">&#9913;</span></label>
+                                                            <div class="wrap-select">
+                                                                <select id="frmDays" name="frmDays" required="">
+                                                                    <option value="4" data-days="4">4 dagar</option>
+                                                                    <option value="7" data-days="7" selected="selected">7 dagar</option>
+                                                                    <option value="10" data-days="10">10 dagar</option>
+                                                                    <option value="20" data-days="20">20 dagar</option>
+                                                                    <option value="30" data-days="30">30 dagar</option>
+                                                                </select>
+                                                                <img class="arrow-select" src="img/arrow-select.png" alt="arrow-select">
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <label for="s2_single_d" class="scapa-facture-1__in-order">Valuta<span class="star">&#9913;</span></label>
+                                                            <div class="wrap-select">
+                                                                <select id="s2_single_d" name="frmCurrency" required="">
+                                                                    <option value="1">SEK</option>
+                                                                    <option value="3">EURO</option>
+                                                                    <option value="5">USD</option>
+                                                                    <option value="2">NOK</option>
+                                                                    <option value="4">DKK</option>
+                                                                </select>
+                                                                <img class="arrow-select" src="img/arrow-select.png" alt="arrow-select">
+                                                            </div>
+                                                        </div>
+                                                        <label for="s2_single__second" class="scapa-facture-1__in-order">Hur vill du skicka fakturan?</label>
+                                                        <a href="#"><i class="fa fa-question-circle-o"></i></a>
+                                                        <div class="wrap-select">
+                                                            <select id="s2_single__second" name="frmSendOption">
+                                                                <option value="0" selected="2">E-post till referens/kontaktperson</option>
+                                                                <option value="1">Brev: Frilansjobbarna skriver ut och postar din faktura. + 20 SEK</option>
+                                                            </select>
+                                                            <img class="arrow-select" src="img/arrow-select.png" alt="arrow-select">
+                                                        </div>
+                                                    </div> <!--.scapa-facture-1__row-second-->
+
+                                                    <div class="scapa-facture-1__row-third col-md-4 clearfix">
+                                                        <label for="addinvoice_fee" class="scapa-facture-1__in-order">Omkostnader & Försäkringsavgift<br>Vem ska betala avgiften</label>
+                                                        <a href="#"><i class="fa fa-question-circle-o"></i></a>
+                                                        <div class="wrap-select before-end">
+                                                            <select id="addinvoice_fee"name="addinvoice_fee">
+                                                                <option value="freelancer">Freelancer</option>
+                                                                <option value="both">Both</option>
+                                                                <option value="employer">The employer</option>
+                                                            </select>
+                                                            <img class="arrow-select" src="img/arrow-select.png" alt="arrow-select">
+                                                        </div>
+                                                        <label for="s2_single__third" class="scapa-facture-1__in-order">Lönutbetalning</label>
+                                                        <a href="#"><i class="fa fa-question-circle-o end"></i></a>
+                                                        <div class="wrap-select">
+                                                            <select id="s2_single__third"name="frmPayment">
+                                                                <option selected="" value="0">Standard: När fakturan är betald</option>
+                                                                <option value="1">Express: Inom 24 timmar. (Kräver Kreditupplysning)</option>
+                                                            </select>
+                                                            <img class="arrow-select" src="img/arrow-select.png" alt="arrow-select">
+                                                        </div>
+                                                    </div><!--.scapa-facture-1__row-third-->
+
+                                                </div><!--.wrap-for-form-->
+                                                <button type="submit" class="button next-step pull-right">Nästa steg <img src="img/icon-chevron-right-admin.png" alt="next step"></img></button>
+                                            </form>
+                                        </div><!--.scapa-facture-1-->
+
+                                        <div role="tabpanel" class="scapa-facture-2 tab-pane fade" id="js-scapa-facture-2">
+
+                                        </div><!--.scapa-facture-2-->
+
+                                        <div role="tabpanel" class="tab-pane fade" id="js-scapa-facture-3">
+
+                                        </div><!--.scapa-facture-3-->
+
+                                        <div role="tabpanel" class="tab-pane fade" id="js-scapa-facture-4">
+
+                                        </div><!--.scapa-facture-4-->
+
+                                    </div> <!--.tab-content-->
+
+                                </div> <!--.scapa-factura-tabs-->
+
+                            </div><!--.row-->
+                        </div><!--.container-->
+
+                    </div><!--.scapa-factura-->
+
+                    <footer class="footer">
+                        <div class="container">
+                            <div class="row">
+                                <div class="clearfix">
+                                    <div class="footer__logo-social col-sm-3 col-md-4 col-lg-3">
+                                        <a class="footer__logo logo pull-left" href="#">
+                                            <img src="img/logo.jpg" alt="logo">
+                                        </a>
+                                        <div class="social">
+                                            <a class="social__icon facebook_icon" href="#" target="_blank"></a>
+                                            <a class="social__icon instagram_icon" href="#" target="_blank"></a>
+                                            <a class="social__icon youtube_icon" href="#" target="_blank"></a>
+                                            <a class="social__icon google_icon" href="#" target="_blank"></a>
+                                            <a class="social__icon twitter_icon" href="#" target="_blank"></a>
+                                            <a class="social__icon email_icon" href="#" target="_blank"></a>
+                                        </div>
+                                    </div>
+                                    <div class="footer-contacts col-sm-4 col-md-3 col-lg-offset-2 col-lg-3">
+                                        <h5>Kontakta Oss</h5>
+                                        <p>08-240 250</p>
+                                        <p>info@frilansjobbarna.se</p>
+                                        <p>SMS 076 - 944 90 40</p>
+                                        <p>Måndag - Fredag: 09-17</p>
+                                        <p>Lördag - Söndag: 10-15</p>
+                                        <p>Egenanställda i Sverige AB</p>
+                                        <p>Huvudsta strand 23 C,</p>
+                                        <p>171 73 SOLNA</p>
+                                    </div>
+                                    <div class="footer-partners col-sm-5 col-lg-4 clearfix">
+                                        <h5>Partners</h5>
+                                        <div>
+                                            <img class="footer-vimentis-logo" src="img/footer-vimentis-logo.png"
+                                                 alt="vimentis logo">
+                                            <img class="footer-inkassogram-logo" src="img/footer-inkassogram-logo.png"
+                                                 alt="inkassogram logo">
+                                        </div>
+                                        <div>
+                                            <img class="footer-soderberg-logo" src="img/footer-soderberg-logo.png"
+                                                 alt="soderberg logo">
+                                            <img class="footer-creditsafe-logo" src="img/footer-creditsafe-logo.png"
+                                                 alt="creditsafe logo">
+                                        </div>
+                                    </div>
+                                </div><!--.clearfix-->
+                                <p class="copyrigh">&#169; 2017 Egenanställda i Sverige AB (559098-7292) | Godkänd för
+                                    F-skatt</p>
+                                <div class="footer_scroll-up" id="js-scroll-up">
+                                    <img src="img/scrollUp-up.jpg" alt="scroll up">
+                                </div>
+                            </div>
+                        </div>
+                    </footer><!--.footer-->
+
+                </div><!--.row-->
+            </div><!--.container-fluid-->
+
+        </div><!--.page-->
+    </body>
+</html>

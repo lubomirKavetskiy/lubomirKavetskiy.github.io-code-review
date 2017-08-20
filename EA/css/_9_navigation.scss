@@ -1,0 +1,175 @@
+@charset "utf-8";
+
+.navigation {
+  position: absolute;
+  top: -526px;
+  right: 0;
+  padding-left: 65px;
+  width: 630px;
+  text-align: left;
+  background-color: #FFF;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  z-index: 2;
+
+  -webkit-box-shadow: -2px 2px 4px 2px rgba(218,218,218,1);
+  -moz-box-shadow: -2px 2px 4px 2px rgba(218,218,218,1);
+  box-shadow: -2px 2px 4px 2px rgba(218,218,218,1);
+
+  ul {
+    margin-top: 25px;
+    margin-bottom: 23px;
+  }
+
+  a {
+    display: block;
+    font-size: 20px;
+    color: #333;
+    line-height: 2.55;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+
+    &:hover {
+      color: #ea2f2f;
+    }
+  }
+
+  p {
+    margin-bottom: 2px;
+    font-size: 18px;
+    color: #AAA;
+  }
+
+  .social {
+    margin-top: 30px;
+    margin-bottom: 33px;
+
+    &__icon {
+      display: inline-block;
+      margin-right: 23px;
+      width: 42px;
+      height: 43px;
+      background-image: url("../img/social-icons.png");
+      background-repeat: no-repeat;
+
+      &:hover {
+        opacity: .8;
+      }
+    }
+
+    .instagram_icon {
+      background-position-x: -42px;
+    }
+
+    .instagram_icon {
+      background-position-x: -42px;
+    }
+
+    .instagram_icon {
+      background-position-x: -42px;
+    }
+
+    .youtube_icon {
+      background-position-x: -84px;
+    }
+
+    .google_icon {
+      background-position-x: -126px;
+    }
+
+    .twitter_icon {
+      background-position-x: -168px;
+    }
+
+    .email_icon {
+      margin-right: 0;
+      background-position-x: -210px;
+    }
+  }
+}
+
+
+@include adaptive(max1500) {
+  .navigation {
+    width: 450px;
+  }
+}
+
+@include adaptive(max1199) {
+  .navigation {
+    width: 425px;
+    padding-left: 50px;
+
+    a {
+      line-height: 2.1;
+    }
+
+  }
+}
+
+@include adaptive(max991) {
+  .navigation {
+    width: 400px;
+    padding-left: 40px;
+
+    a {
+      line-height: 2;
+    }
+
+    .social {
+      margin-top: 25px;
+      margin-bottom: 28px;
+    }
+
+    .social__icon {
+      margin-right: 20px;
+    }
+  }
+}
+
+@include adaptive(max767) {
+  .navigation {
+    width: 100%;
+
+    a {
+      font-size: 19px;
+      line-height: 2;
+    }
+
+    p {
+      font-size: 17px;
+    }
+  }
+}
+
+@include adaptive(max480) {
+  .navigation {
+    padding-left: 30px;
+
+    ul {
+      margin-bottom: 10px;
+    }
+
+    a {
+      font-size: 18px;
+      line-height: 2;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    .social {
+      margin-top: 15px;
+      margin-bottom: 22px;
+    }
+
+    .social__icon {
+      margin-right: 6px;
+    }
+  }
+}

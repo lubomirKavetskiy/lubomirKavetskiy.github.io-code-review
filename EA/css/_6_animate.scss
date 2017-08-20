@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+/*
+ * ----------------------------------------
+ * animation shake-horizontal
+ * ----------------------------------------
+ */
+@include adaptive(min768) {
+
+  .shake-horizontal {
+    -webkit-animation: shake-horizontal 3s linear both;
+    animation: shake-horizontal 3s linear both;
+    animation-iteration-count: infinite;
+  }
+
+  @-webkit-keyframes shake-horizontal {
+    0%,
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+    10%,
+    30%,
+    50%,
+    70% {
+      -webkit-transform: translateX(-4px);
+      transform: translateX(-4px);
+    }
+    20%,
+    40%,
+    60% {
+      -webkit-transform: translateX(4px);
+      transform: translateX(4px);
+    }
+    80% {
+      -webkit-transform: translateX(3px);
+      transform: translateX(3px);
+    }
+    90% {
+      -webkit-transform: translateX(-3px);
+      transform: translateX(-3px);
+    }
+  }
+}
+
+@include adaptive(max767) {
+
+  .shake-vertical {
+    -webkit-animation: shake-vertical 3s linear both;
+    animation: shake-vertical 3s linear both;
+    animation-iteration-count: infinite;
+  }
+
+  @-webkit-keyframes shake-vertical {
+    0%,
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    10%,
+    30%,
+    50%,
+    70% {
+      -webkit-transform: translateY(-4px);
+      transform: translateY(-4px);
+    }
+    20%,
+    40%,
+    60% {
+      -webkit-transform: translateY(4px);
+      transform: translateY(4px);
+    }
+    80% {
+      -webkit-transform: translateY(3px);
+      transform: translateY(3px);
+    }
+    90% {
+      -webkit-transform: translateY(-3px);
+      transform: translateY(-3px);
+    }
+  }
+}

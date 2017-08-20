@@ -1,0 +1,160 @@
+@charset "utf-8";
+
+.banner-profession_wrap {
+  margin-bottom: 133px;
+  position: relative;
+  top: 133px;
+
+  img {
+    display: block;
+    width: 92%;
+    height: auto;
+    margin: 0 auto;
+    z-index: -1;
+  }
+
+  h1 {
+    width: 100%;
+    margin: 0;
+    font-size: 40px;
+    color: #000;
+    position: absolute;
+    top: 3.3%;
+    text-align: center;
+    font-weight: 600;
+  }
+
+  h2 {
+    width: 100%;
+    margin: 0;
+    font-size: 30px;
+    color: #000;
+    position: absolute;
+    bottom: 15%;
+    text-align: center;
+
+  }
+
+  .banner-profession__buttons {
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    bottom: 4%;
+    text-align: center;
+  }
+}
+
+
+@include adaptive(max1500) {
+  .banner-profession_wrap {
+    h1 {
+      top: 1%;
+    }
+
+    h2 {
+      bottom: 18%;
+    }
+  }
+}
+
+@include adaptive(max1199) {
+  .banner-profession_wrap {
+    h1 {
+      top: -1%;
+      font-size: 38px;
+    }
+
+    h2 {
+      bottom: 21%;
+      font-size: 28px;
+    }
+  }
+}
+
+@include adaptive(max991) {
+  .banner-profession_wrap {
+    h1 {
+      top: -3%;
+      font-size: 35px;
+    }
+
+    h2 {
+      bottom: 22%;
+      font-size: 25px;
+    }
+
+    .banner-profession__buttons {
+      bottom: 5%;
+    }
+  }
+}
+
+@include adaptive(max767) {
+  .banner-profession_wrap {
+    h1 {
+      top: -6%;
+      font-size: 28px;
+    }
+
+    h2 {
+      bottom: 28%;
+      font-size: 21px;
+      color: #FFF;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+    }
+
+    .banner-profession__buttons {
+      bottom: 5%;
+
+      .btn-left {
+        padding: 8px 34px;
+        font-size: 20px;
+      }
+
+      .btn-right {
+        padding: 8px 14.5px;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@include adaptive(max480) {
+  .banner-profession_wrap {
+    top: 100px;
+
+    h1 {
+      top: -6%;
+      font-size: 21px;
+    }
+
+    h2 {
+      bottom: 15%;
+      font-size: 16px;
+    }
+
+    .banner-profession__buttons {
+      bottom: -10%;
+    }
+  }
+}
+
+@include adaptive(max400) {
+  .banner-profession_wrap {
+    top: 100px;
+
+    h1 {
+      top: -5%;
+      font-size: 18px;
+    }
+
+    h2 {
+      bottom: 15%;
+      font-size: 13px;
+    }
+
+    .banner-profession__buttons {
+      bottom: -12%;
+    }
+  }
+}

@@ -1,0 +1,303 @@
+@charset "utf-8";
+
+.hidden-result-calculator {
+  display: none;
+  padding: 75px 0 0 0;
+  margin-bottom: 25px;
+
+
+  .how-much-it-cost {
+    text-align: left;
+    padding-left: 0;
+
+    h5 {
+      margin-bottom: 17px;
+      font-size: 18px;
+      color: #5a5e6d;
+    }
+
+    p {
+      margin: 0;
+      font-size: 16px;
+      color: #5a5e6d;
+    }
+
+    .donut-container {
+      margin: 25px 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        position: relative;
+        margin: 30px auto;
+      }
+
+      #donut {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        * {
+          font-size: 16px;
+          //color: #646464;
+        }
+
+        svg {
+          width: 512px;
+          top: 125px!important;
+          left: 30px!important;
+          font-size: 20px;
+        }
+
+      }
+    }
+  }
+
+  .we-expect {
+    padding-right: 0;
+
+    h5 {
+      font-size: 18px;
+      color: #5a5e6d;
+    }
+
+    .we-expect__list {
+      margin-top: 27px;
+
+      li {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 0 20px;
+        width: 100%;
+        height: 60px;
+
+        &:nth-child(2n){
+          background-color: #FFF;
+        }
+
+        &:nth-child(2n+1){
+          background-color: #EEE;
+        }
+
+        .list__label {
+          width: 75%;
+          font-size: 16px;
+          color: #5a5e6d;
+        }
+
+        .list-value{
+          width: 25%;
+          font-size: 16px;
+          color: #5a5e6d;
+          text-align: right;
+
+          &::after {
+            content: " SEK";
+          }
+        }
+      }
+    }
+  }
+}
+
+@include adaptive(max1199) {
+  .hidden-result-calculator {
+    padding-top: 40px;
+
+    .how-much-it-cost {
+      padding-left: 15px;
+
+      .donut-container {
+        margin: 10px 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          margin: 0 auto;
+        }
+
+        #donut {
+
+          svg {
+            //width: 512px;
+            top: 124px!important;
+            left: -10px!important;
+          }
+        }
+      }
+    }
+
+    .we-expect {
+      padding-right: 15px;
+    }
+  }
+}
+
+@include adaptive(max991) {
+  .hidden-result-calculator {
+    padding-top: 20px;
+
+    .how-much-it-cost {
+      h5 {
+        font-size: 17px;
+      }
+
+      p {
+        font-size: 15px;
+      }
+
+      .donut-container {
+        margin: 20px 0;
+
+        #donut {
+
+          svg {
+            //width: 512px;
+            top: 129px !important;
+            left: -65px !important;
+          }
+        }
+      }
+    }
+
+    .we-expect {
+      h5 {
+        font-size: 17px;
+      }
+
+      p {
+        font-size: 15px;
+      }
+
+      .we-expect__list {
+
+        li {
+          padding: 0 10px;
+
+          .list__label {
+            font-size: 15px;
+          }
+
+          .list-value {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include adaptive(max767) {
+  .hidden-result-calculator {
+    padding-top: 10px;
+
+    .how-much-it-cost {
+
+      h5 {
+        text-align: center;
+      }
+
+      p {
+        text-align: center;
+      }
+
+      .donut-container {
+        margin: 35px 0;
+
+        #donut {
+          top: auto;
+          left: auto;
+
+          svg {
+            top: -5px!important;
+            left: 0!important;
+          }
+        }
+      }
+    }
+
+    .we-expect {
+
+      .we-expect__list {
+        margin-top: 20px;
+
+        li {
+          height: 50px;
+        }
+      }
+    }
+  }
+}
+
+@include adaptive(max480) {
+  .hidden-result-calculator {
+    padding-top: 0;
+
+    .how-much-it-cost {
+
+      h5 {
+        text-align: center;
+      }
+
+      p {
+        text-align: center;
+      }
+
+      .donut-container {
+        margin: 25px 0;
+
+        #donut {
+          top: auto;
+          left: auto;
+
+          svg {
+            width: 290px;
+            top: -5px!important;
+            left: 0!important;
+          }
+        }
+      }
+    }
+
+    .we-expect {
+      h5 {
+        font-size: 16px;
+        text-align: center;
+      }
+
+      p {
+        font-size: 15px;
+      }
+
+      .we-expect__list {
+        margin-top: 20px;
+
+        li {
+          flex-direction: column;
+          justify-content: space-around;
+          height: 60px;
+
+          .list__label {
+            width: 100%;
+            font-size: 14px;
+            text-align: center;
+          }
+
+          .list-value {
+            width: 100%;
+            font-size: 14px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+

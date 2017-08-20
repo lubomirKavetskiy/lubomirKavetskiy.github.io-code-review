@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+$fontBody: 'Montserrat-Regular', sans-serif;
+$backgroundBody: #FFF;
+
+body {
+  font-family: $fontBody;
+  background-color: $backgroundBody;
+}
+
+.page {
+  min-width: 320px;
+
+  .row {
+    position: relative;
+  }
+}
+
+input, select, textarea, button {
+  outline: none!important;
+}

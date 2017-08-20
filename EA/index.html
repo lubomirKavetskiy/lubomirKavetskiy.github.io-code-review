@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Star</title>
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <link rel="icon" type="image/vnd.microsoft.icon" href="img/favicon.ico">
+        <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+        <script src="js/morris.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+        <div class="page">
+
+            <div class="container-fluid">
+                <div class="row">
+
+                    <nav class="navigation">
+                        <ul>
+                            <li><a href="">Start</a></li>
+                            <li><a href="">Om egenanställning</a></li>
+                            <li><a href="">Från skatteverket</a></li>
+                            <li><a href="">Om systemet</a></li>
+                            <li><a href="">Om oss</a></li>
+                            <li><a href="">Kontakt</a></li>
+                        </ul>
+                        <p>Telefon: 026 - 22 22 199</p>
+                        <p>Måndag - Fredag 9:00 - 17:00</p>
+                        <p>Lördagar - Söndagar 10:00 - 15:00</p>
+                        <p>Epost: info@frilansjobbarna.se</p>
+                        <div class="social">
+                            <a class="social__icon facebook_icon" href="#" target="_blank"></a>
+                            <a class="social__icon instagram_icon" href="#" target="_blank"></a>
+                            <a class="social__icon youtube_icon" href="#" target="_blank"></a>
+                            <a class="social__icon google_icon" href="#" target="_blank"></a>
+                            <a class="social__icon twitter_icon" href="#" target="_blank"></a>
+                            <a class="social__icon email_icon" href="#" target="_blank"></a>
+                        </div>
+                    </nav>
+
+                    <header class="header">
+                        <div class="container">
+                            <div class="row">
+                                <a class="header__logo logo pull-left" href="#">
+                                    <img src="img/logo.jpg" alt="logo">
+                                </a>
+                                <button class="c-hamburger c-hamburger--htx pull-right" type="button">
+                                    <span>toggle menu</span>
+                                </button>
+                                <!--<a href="#" class="pull-right">-->
+                                    <!--<button class="button button-login" type="button">Logga in</button>-->
+                                <!--</a>-->
+                                <a href="#" class="button button-login pull-right">Logga in</a>
+
+                            </div><!--.row-->
+                        </div><!--.container-->
+                    </header>
+
+                    <section class="banner-profession">
+                        <div class="banner-profession_wrap">
+                            <img src="img/banner-profession.jpg" alt="">
+                            <h1>Egenanställning – enklare för alla</h1>
+                            <h2>Anställ dig själv - ett andra sätt att jobba!</h2>
+                            <div class="banner-profession__buttons text-center">
+                                <a href="#">
+                                    <button type="submit" class="button button-left">Skapa konto</button>
+                                </a>
+                                <button type="button" id="to-calculation-wages" class="button button-right">Räkna ut din lön</button>
+                            </div>
+                        </div>
+                    </section><!--.banner-profession-->
+
+                    <section class="vertical-list">
+                        <div class="container">
+                            <div class="row">
+                                <div class="vertical-list__left-list col-sm-6">
+                                    <div class="left-list__title">
+                                        <h3>Så här fungerar det</h3>
+                                        <h3>för dig som frilansare</h3>
+                                    </div>
+                                    <div class="left-list__items">
+                                        <h5 class="pointer">Anslut</h5>
+                                        <p>dig som frilansare</p>
+                                        <h5 class="pointer">Avtal</h5>
+                                        <p>muntligt eller skriftligt avtal med uppdrags-givaren</p>
+                                        <h5 class="pointer">Skicka faktura</h5>
+                                        <p>dig som Du fullföljer avtalet och skickar fakturan via Mina</p>
+                                        <h5 class="pointer">Uppdragsgivare betalar</h5>
+                                        <p>dig som Du fullföljer avtalet och skickar fakturan via Mina sidor</p>
+                                        <h5 class="pointer">Du får lön</h5>
+                                        <p>Vi betalar ut din lön efter att skatt och avgifter dragits</p>
+                                        <img class="vertical-list_arrow" src="img/vertical-list_arrow.png" alt="arrow">
+                                    </div>
+                                </div>
+                                <div class="vertical-list__right-list col-sm-6">
+                                    <div class="right-list__title">
+                                        <h3>Så här fungerar det</h3>
+                                        <h3>för dig som uppdragsgivare</h3>
+                                    </div>
+                                    <div class="right-list__items">
+                                        <h5 class="pointer">Anslut</h5>
+                                        <p>dig som frilansare</p>
+                                        <h5 class="pointer">Avtal</h5>
+                                        <p>muntligt eller skriftligt avtal med uppdrags-givaren</p>
+                                        <h5 class="pointer">Skicka faktura</h5>
+                                        <p>dig som Du fullföljer avtalet och skickar fakturan via Mina sidor</p>
+                                        <h5 class="pointer">Uppdragsgivare betalar</h5>
+                                        <p>dig som Du fullföljer avtalet och skickar fakturan via Mina sidor</p>
+                                        <h5 class="pointer">Du får lön</h5>
+                                        <p>Vi betalar ut din lön efter att skatt och avgifter dragits</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section><!--.vertical-list-->
+
+                    <section class="calculation-wages" id="js-calculation-wages">
+                        <div class="container">
+                            <div class="row">
+                                <h2 class="text-center">Räkna ut din lön</h2>
+                                <form class="text-center" method="" action="">
+                                    <div id="age-select-container">
+                                        <div class="col-xs-12 col-sm-offset-3 col-sm-2">
+                                            <label class="ask">din ålder –</label>
+                                        </div>
+
+                                        <div class="calc-age-control col-xs-6 col-sm-2">
+                                            <input id="f-option" class="age-select" name="selector" type="radio" checked="checked">
+                                            <label for="f-option" class="calc-age-control__label">under 65</label>
+                                        </div>
+                                        <div class="calc-age-control col-xs-6 col-sm-2">
+                                            <input id="s-option" class="age-select" name="selector" type="radio">
+                                            <label for="s-option" class="calc-age-control__label">över 65</label>
+                                        </div>
+                                    </div>
+                                    <div class="inputs-enter-number text-center">
+                                        <div class="number-block">
+                                            <label for="invoice-value">Skriv in önskad fakturabelopp</label>
+                                            <input id="invoice-value" type="number" name="number" value="999999999">
+                                            <span>FAKTURABELOPP (EXKL. MOMS)</span>
+                                        </div>
+                                        <img class="rotate-90deg shake-vertical shake-horizontal" src="img/input-arrow.png" alt="input arrow">
+                                        <div class="number-block">
+                                            <label for="net-value">Skriv in önskad fakturabelopp</label>
+                                            <input id="net-value" type="number" name="number" value="777">
+                                            <span>FAKTURABELOPP (EXKL. MOMS)</span>
+                                        </div>
+                                    </div>
+                                </form>
+                                <div class="calculation-wages__buttons text-center">
+                                    <a href="#">
+                                        <button type="submit" class="button button-left">Skapa konto</button>
+                                    </a>
+                                    <button type="button" class="button button-right">Visa detaljer</button>
+                                </div>
+                            </div>
+                        </div>
+                    </section><!--.calculation-wages-->
+
+                    <section class="hidden-result-calculator">
+                        <div class="container">
+                            <div class="row">
+                                <div class="how-much-it-cost col-sm-6">
+                                    <h5>Vad kostar det?</h5>
+                                    <p>Vi tar endast 5% per skickad faktura vid standard löneutbetalning.</p>
+                                    <p>Vi har inga månads eller årsavgifter. Börja fakturera redan idag.</p>
+                                    <div class="donut-container">
+                                        <img src="img/circle-for-svg.png" alt="">
+                                        <div id="donut"></div>
+                                    </div>
+                                </div>
+                                <div class="we-expect col-sm-6">
+                                    <h5>Så här räknar vi:</h5>
+                                    <ul class="we-expect__list">
+                                        <li><span class="list__label">Fakturabelopp (exkl. moms)</span><span class="list-value" id="details-invoice-value">1000</span></li>
+                                        <li><span class="list__label">Frilansjobbarna</span><span class="list-value" id="details-fee">500</span></li>
+                                        <li><span class="list__label">Sociala avgifter</span><span class="list-value" id="details-socials">2271</span></li>
+                                        <li><span class="list__label">Bruttolön (inkl. semesterersättning)</span><span class="list-value" id="details-gross">7229</span></li>
+                                        <li><span class="list__label">Varav semesterersättning</span><span class="list-value" id="details-holiday">775</span></li>
+                                        <li><span class="list__label">Skatt</span><span class="list-value" id="details-tax">2169</span></li>
+                                        <li><span class="list__label">Nettolön (lön efter skatt)</span><span class="list-value" id="details-net">5060</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section><!--.hidden-result-calculator-->
+
+                    <section class="banner-happy-freelancers">
+                        <img src="img/banner-happy-frilansers.jpg" alt="banner-happy-frilansers">
+                        <div class="banner-happy-freelancers__wrap">
+                            <div class="banner-happy-freelancers-article js-animate-zoom-in" data-aos="zoom-in" data-aos-delay="150">
+                                <h3>Några av våra nöjda frilansare</h3>
+                                <blockquote>
+                                    “Så otroligt enkelt samt otroligt trevlig kundtjänst som tar sig tid att hjälpa mig. Att vara egenanställd har fått mig höja min lön från tidigare jobb. Kunde inte gjort det utan er.
+                                    Tack igen.” - EVA
+                                </blockquote>
+                                <blockquote>
+                                    "Så otroligt enkelt samt otroligt trevlig kundtjänst som tar sig tid att hjälpa mig. Att vara egenanställd har fått mig höja min lön från tidigare jobb. Kunde inte gjort det utan er.
+                                    Tack igen.” - EVA
+                                </blockquote>
+                            </div>
+                        </div>
+                    </section><!--.banner-happy-freelancers-->
+
+                    <section class="how-it-work">
+                        <div class="container">
+                            <div class="row">
+                                <div class="how-it-work__freelancer col-sm-6">
+                                    <h3>Från Skatteverket för dig som frilansare</h3>
+                                    <div class="freelancer__list-wrap list-wrap">
+                                        <ul>
+                                            <li><i class="fa fa-check"></i><span>Avtala först med företaget.</span></li>
+                                            <li><i class="fa fa-check"></i><span>Inga anställningsinkomster</span></li>
+                                            <li><i class="fa fa-check"></i><span>Egenanställnings företagets skyldigheter</span></li>
+                                            <li><i class="fa fa-check"></i><span>Reseersättning och traktamente</span></li>
+                                            <li><i class="fa fa-check"></i><span>Övriga kostnader</span></li>
+                                            <li><i class="fa fa-check"></i><span>Du gör avdrag i din deklaration</span></li>
+                                        </ul>
+                                        <!--<a href="#">-->
+                                            <!--<button class="button read-more">-->
+                                                <!--<span>Läs mer</span>-->
+                                            <!--</button>-->
+                                        <!--</a>-->
+                                        <a href="#" class="button read-more">Läs mer</a>
+                                    </div>
+                                </div>
+                                <div class="how-it-work__outsourcer col-sm-6">
+                                    <h3>Så här fungerar det för dig som uppdragsgivare</h3>
+                                    <div class="outsourcer__list-wrap list-wrap">
+                                        <ul>
+                                            <li><i class="fa fa-check"></i><span>Avtala först med företaget.</span></li>
+                                            <li><i class="fa fa-check"></i><span>Inga anställningsinkomster</span></li>
+                                            <li><i class="fa fa-check"></i><span>Egenanställnings företagets skyldigheter</span></li>
+                                            <li><i class="fa fa-check"></i><span>Reseersättning och traktamente</span></li>
+                                            <li><i class="fa fa-check"></i><span>Övriga kostnader</span></li>
+                                            <li><i class="fa fa-check"></i><span>Du gör avdrag i din deklaration</span></li>
+                                        </ul>
+                                        <a href="#" class="button read-more">Läs mer</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section><!--.how-it-work-->
+
+                    <section class="banner-gratitude-reviews">
+                        <img src="img/banner-gratitude-reviews.jpg" alt="banner-gratitude-reviews">
+                        <div class="banner-gratitude-reviews__wrap">
+                            <div class="banner-gratitude-reviews-article js-animate-zoom-in" data-aos="zoom-in" data-aos-delay="150">
+                                <h3>Några av våra nöjda frilansare</h3>
+                                <blockquote>
+                                    “Tusen tack för all er hjälp och extra ansträngning! Kommer absolut att rekommendera er varmt vidare till alla (känner många artister och liknande ´gigsters´ som sysslar med musik, konst, film, m.m)” - ERIK
+                                </blockquote>
+                                <blockquote>
+                                    “Tack så mycket och sorry för allt trubbel. Känner mig inte så förvirrad längre.” - SOFIE
+                                </blockquote>
+                            </div>
+                        </div>
+                    </section><!--.banner-gratitude-reviews-->
+
+                    <section class="why-it-easier">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-6 text-center">
+                                    <h2>Varför är det enklare?</h2>
+                                    <p>Jobba och tjäna pengar, enkelt, tryggt</p>
+                                    <p>Ta ut lön – skattat och klart.</p>
+                                    <p>Pengar inom 24 tim!</p>
+                                    <p>Vi löser administrationen åt dig</p>
+                                    <a href="#" class="button button-center">Skapa konto</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section><!--.why-it-easier-->
+
+                    <footer class="footer">
+                        <div class="container">
+                            <div class="row">
+                                <div class="clearfix">
+                                    <div class="footer__logo-social col-sm-3 col-md-4 col-lg-3">
+                                        <a class="footer__logo logo pull-left" href="#">
+                                            <img src="img/logo.jpg" alt="logo">
+                                        </a>
+                                        <div class="social">
+                                            <a class="social__icon facebook_icon" href="#" target="_blank"></a>
+                                            <a class="social__icon instagram_icon" href="#" target="_blank"></a>
+                                            <a class="social__icon youtube_icon" href="#" target="_blank"></a>
+                                            <a class="social__icon google_icon" href="#" target="_blank"></a>
+                                            <a class="social__icon twitter_icon" href="#" target="_blank"></a>
+                                            <a class="social__icon email_icon" href="#" target="_blank"></a>
+                                        </div>
+                                    </div>
+                                    <div class="footer-contacts col-sm-4 col-md-3 col-lg-offset-2 col-lg-3">
+                                        <h5>Kontakta Oss</h5>
+                                        <p>08-240 250</p>
+                                        <p>info@frilansjobbarna.se</p>
+                                        <p>SMS 076 - 944 90 40</p>
+                                        <p>Måndag - Fredag: 09-17</p>
+                                        <p>Lördag - Söndag: 10-15</p>
+                                        <p>Egenanställda i Sverige AB</p>
+                                        <p>Huvudsta strand 23 C,</p>
+                                        <p>171 73 SOLNA</p>
+                                    </div>
+                                    <div class="footer-partners col-sm-5 col-lg-4 clearfix">
+                                        <h5>Partners</h5>
+                                        <div>
+                                            <img class="footer-vimentis-logo" src="img/footer-vimentis-logo.png"
+                                                 alt="vimentis logo">
+                                            <img class="footer-inkassogram-logo" src="img/footer-inkassogram-logo.png"
+                                                 alt="inkassogram logo">
+                                        </div>
+                                        <div>
+                                            <img class="footer-soderberg-logo" src="img/footer-soderberg-logo.png"
+                                                 alt="soderberg logo">
+                                            <img class="footer-creditsafe-logo" src="img/footer-creditsafe-logo.png"
+                                                 alt="creditsafe logo">
+                                        </div>
+                                    </div>
+                                </div><!--.clearfix-->
+                                <p class="copyrigh">&#169; 2017 Egenanställda i Sverige AB (559098-7292) | Godkänd för
+                                    F-skatt</p>
+                                <div class="footer_scroll-up" id="js-scroll-up">
+                                    <img src="img/scrollUp-up.jpg" alt="scroll up">
+                                </div>
+                            </div>
+                        </div>
+
+                    </footer><!--.footer-->
+
+                </div><!--.row-->
+            </div><!--.container-fluid-->
+
+        </div><!--.page-->
+    </body>
+</html>

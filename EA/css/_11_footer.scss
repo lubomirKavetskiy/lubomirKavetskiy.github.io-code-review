@@ -1,0 +1,448 @@
+@charset "utf-8";
+
+.footer {
+  //margin-top: 700px;
+
+
+  background-color: #222;
+
+  .row {
+    position: relative;
+
+    .footer__logo-social {
+      position: relative;
+      padding-left: 0;
+      padding-right: 0;
+
+      .footer__logo {
+
+        img {
+          //width: 120px;
+        }
+      }
+
+      .social {
+        margin-top: 202px;
+        margin-bottom: 130px;
+
+        &__icon {
+          display: inline-block;
+          margin-right: 8px;
+          width: 42px;
+          height: 43px;
+          background-image: url("../img/social-icons.png");
+          background-repeat: no-repeat;
+
+          &:hover {
+            opacity: .8;
+          }
+        }
+
+        .instagram_icon {
+          background-position-x: -42px;
+        }
+
+        .instagram_icon {
+          background-position-x: -42px;
+        }
+
+        .instagram_icon {
+          background-position-x: -42px;
+        }
+
+        .youtube_icon {
+          background-position-x: -84px;
+        }
+
+        .google_icon {
+          background-position-x: -126px;
+        }
+
+        .twitter_icon {
+          background-position-x: -168px;
+        }
+
+        .email_icon {
+          margin-right: 0;
+          background-position-x: -210px;
+        }
+      }
+    }
+
+    .footer-contacts {
+      padding: 70px 0 0;
+      color: #FFF;
+      text-align: left;
+
+      h5 {
+        margin-top: 8px;
+        margin-bottom: 40px;
+        font-size: 18px;
+      }
+
+      p {
+        margin-top: 0;
+        margin-bottom: 8px;
+        font-size: 16px;
+      }
+    }
+
+    .footer-partners {
+      padding: 70px 0 27px 20px;
+
+      h5 {
+        margin-top: 8px;
+        margin-bottom: 54px;
+        font-size: 18px;
+        color: #FFF;
+      }
+
+      div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        &:last-child {
+          margin-top: 65px;
+        }
+      }
+
+      .footer-vimentis-logo {
+        margin-left: 27px;
+        width: 97px;
+      }
+
+      .footer-inkassogram-logo {
+        width: 175px;
+      }
+
+      .footer-soderberg-logo {
+        width: 160px;
+      }
+
+      .footer-creditsafe-logo {
+        width: 171px;
+      }
+    }
+
+    .copyrigh {
+      margin-top: 62px;
+      margin-bottom: 30px;
+      font-size: 16px;
+      color: #FFF;
+    }
+
+    .footer_scroll-up {
+      position: absolute;
+      bottom: 72px;
+      right: -295px;
+
+      display: inline-block;
+      cursor: pointer;
+
+      &:hover {
+        opacity: .9;
+      }
+    }
+  }
+}
+
+@include adaptive(max1800) {
+  .footer {
+
+    .row {
+
+      .footer_scroll-up {
+        right: -140px;
+        bottom: 35px;
+      }
+    }
+  }
+}
+
+
+@include adaptive(max1500) {
+  .footer {
+
+    .row {
+
+      .footer_scroll-up {
+        right: 0;
+        bottom: 15px;
+      }
+    }
+  }
+}
+
+@include adaptive(max1199) {
+  .footer {
+
+    .row {
+
+      .footer__logo-social {
+
+        .footer__logo {
+
+          img {
+            width: 160px;
+          }
+        }
+
+        .social {
+          margin-top: 192px;
+          margin-bottom: 123px;
+        }
+      }
+
+      .footer-contacts {
+        padding: 51px 0 0;
+      }
+
+      .footer-partners {
+        padding: 50px 0 27px 20px;
+
+        .footer-vimentis-logo {
+          margin-left: 0;
+        }
+
+        .footer-inkassogram-logo {
+          margin-left: 20px;
+        }
+
+        .footer-soderberg-logo {
+          width: 160px;
+        }
+
+        .footer-creditsafe-logo {
+          width: 171px;
+        }
+      }
+
+      .copyrigh {
+        margin-top: 45px;
+      }
+
+      .footer_scroll-up {
+        bottom: 11px;
+
+        img {
+          width: 70px;
+        }
+      }
+    }
+  }
+}
+
+@include adaptive(max991) {
+  .footer {
+
+    .row {
+
+      .footer__logo-social {
+
+        .footer__logo {
+
+          img {
+            width: 150px;
+          }
+        }
+
+        .social {
+          margin-top: 180px;
+          margin-bottom: 68px;
+
+          &__icon {
+            margin-right: 12px;
+            margin-bottom: 12px;
+          }
+        }
+      }
+
+      .footer-contacts {
+        padding: 51px 0 0;
+      }
+
+      .footer-partners {
+        padding: 50px 0 39px 20px;
+
+        .footer-vimentis-logo {
+          margin-left: 0;
+          width: 90px;
+        }
+
+        .footer-inkassogram-logo {
+          margin-top: 0;
+          margin-left: 0;
+          width: 170px;
+        }
+
+        .footer-soderberg-logo {
+          width: 140px;
+        }
+
+        .footer-creditsafe-logo {
+          width: 140px;
+        }
+      }
+    }
+  }
+}
+
+@include adaptive(max767) {
+  .footer {
+
+    .row {
+
+      .footer__logo-social {
+        padding-left: 15px;
+        padding-right: 15px;
+
+        .footer__logo {
+          top: -140px;
+          left: 15px;
+
+          img {
+            width: 130px;
+          }
+        }
+
+        .social {
+          margin-top: 140px;
+          margin-bottom: 30px;
+
+          &__icon {
+            margin-right: 20px;
+            margin-bottom: 0;
+          }
+        }
+      }
+
+      .footer-contacts {
+        padding: 30px 15px 0;
+
+        h5 {
+          margin-bottom: 30px;
+        }
+      }
+
+      .footer-partners {
+        padding: 40px 15px 0;
+
+        h5 {
+          margin-bottom: 40px;
+        }
+
+        div {
+          justify-content: flex-start;
+
+          &:last-child {
+            margin-top: 45px;
+          }
+        }
+
+        .footer-inkassogram-logo {
+          margin-left: 95px;
+        }
+
+        .footer-creditsafe-logo {
+          margin-left: 50px;
+        }
+      }
+
+      .copyrigh {
+        margin-top: 35px;
+        margin-bottom: 20px;
+        padding: 0 15px;
+        width: 80%;
+        font-size: 15px;
+        text-align: justify;
+      }
+
+      .footer_scroll-up {
+        right: 15px;
+        bottom: 15px;
+      }
+    }
+  }
+}
+
+@include adaptive(max480) {
+  .footer {
+
+    .row {
+
+      .footer__logo-social {
+
+        .footer__logo {
+          top: -100px;
+
+          img {
+            width: 100px;
+          }
+        }
+
+        .social {
+          margin-top: 100px;
+          margin-bottom: 30px;
+
+          &__icon {
+            margin-right: 7px;
+          }
+        }
+      }
+
+      .footer-contacts {
+        padding: 10px 15px 0;
+
+        h5 {
+          margin-bottom: 20px;
+          font-size: 17px;
+        }
+
+        p {
+          font-size: 15px;
+        }
+      }
+
+      .footer-partners {
+        padding: 10px 15px 0;
+
+        h5 {
+          margin-bottom: 30px;
+          font-size: 17px;
+        }
+
+        div {
+          justify-content: space-between;
+
+          &:last-child {
+            margin-top: 30px;
+          }
+        }
+
+        .footer-inkassogram-logo {
+          margin-left: 0;
+        }
+
+        .footer-creditsafe-logo {
+          margin-left: 0;
+        }
+      }
+
+      .copyrigh {
+        margin-top: 25px;
+        margin-bottom: 10px;
+        font-size: 14px;
+      }
+
+      .footer_scroll-up {
+        bottom: 15px;
+
+        img {
+          width: 50px;
+        }
+      }
+    }
+  }
+}

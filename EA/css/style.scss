@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+// general styles //
+@import "1_normalize";
+@import "2_adaptive";
+@import "3_fonts";
+@import "4_bootstrap";
+@import "5_icon-font-awesome";
+@import "6_animate";
+@import "7_page";
+@import "8_header";
+@import "9_navigation";
+@import "10_button";
+@import "11_footer";
+
+// home-page styles //
+@import "home-page/banner-profession";
+@import "home-page/vertical-list";
+@import "home-page/calculation-wages";
+@import "home-page/hidden-result-calculator";
+@import "home-page/banner-happy-freelancers";
+@import "home-page/how-it-work";
+@import "home-page/banner-gratitude-reviews";
+@import "home-page/why-it-easier";
+
+// admin styles //
+@import "admin/1_header-admin";
+@import "admin/admin-admin";
+@import "admin/admin-table";
+@import "admin/_admin-scapa-facture_1";
+@import "admin/_admin-scapa-facture_2";
+@import "admin/_admin-scapa-facture_3";
+@import "admin/_admin-scapa-facture_4";
+
+// registration styles //
+@import "registration/header-registration";
+@import "registration/footer-registration";
+@import "registration/sign-up";
+@import "registration/log-in";
+
+
+
+
+
+
+
+
+
+
+

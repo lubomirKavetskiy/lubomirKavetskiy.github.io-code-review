@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>admin-admin</title>
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <link rel="icon" type="image/vnd.microsoft.icon" href="img/favicon.ico">
+        <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+        <script src="js/morris.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+        <div class="page">
+            <div class="container-fluid">
+                <div class="row">
+                    <nav class="navigation">
+                        <ul>
+                            <li><a href="">Start</a></li>
+                            <li><a href="">Om egenanställning</a></li>
+                            <li><a href="">Om verktyget</a></li>
+                            <li><a href="">Om oss</a></li>
+                            <li><a href="">Kontakt</a></li>
+                        </ul>
+                        <p>Telefon: 026 - 22 22 199</p>
+                        <p>Måndag - Fredag 9:00 - 17:00</p>
+                        <p>Lördagar - Söndagar 10:00 - 15:00</p>
+                        <p>Epost: info@frilansjobbarna.se</p>
+                        <div class="social">
+                            <a class="social__icon facebook_icon" href="#" target="_blank"></a>
+                            <a class="social__icon instagram_icon" href="#" target="_blank"></a>
+                            <a class="social__icon youtube_icon" href="#" target="_blank"></a>
+                            <a class="social__icon google_icon" href="#" target="_blank"></a>
+                            <a class="social__icon twitter_icon" href="#" target="_blank"></a>
+                            <a class="social__icon email_icon" href="#" target="_blank"></a>
+                        </div>
+                    </nav>
+
+                    <header class="header admin">
+                        <div class="container">
+                            <div class="row">
+                                <a class="header__logo logo pull-left" href="#">
+                                    <img src="img/logo.jpg" alt="logo">
+                                </a>
+                                <button class="c-hamburger c-hamburger--htx pull-right" type="button" >
+                                    <span>toggle menu</span>
+                                </button>
+                                <div class="dropdown-list pull-right">
+                                    <button id="js-dropdown-list" class="button button-dropdown-list" type="button"><span>Valkomen, </span><span>admin</span></button>
+                                    <ul>
+                                        <li><a href="">My Profile</a></li>
+                                        <li><a href="">Insurance</a></li>
+                                        <li><a href="">My invoices</a></li>
+                                        <li><a href="">My clients</a></li>
+                                        <li><a href="">Settings</a></li>
+                                        <li><a href="">Help</a></li>
+                                        <li><a href="">Logout</a></li>
+                                    </ul>
+                                </div>
+                                <div class="switch-language pull-right clearfix">
+                                    <a href="" class="language__nav language__nav_current">en</a><i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                    <a href="ua/" class="language__nav" style="display: none">sv</a>
+                                </div>
+                            </div><!--.row-->
+                        </div><!--.container-->
+                    </header>
+
+                    <div class="images-links">
+                        <div class="container">
+                            <div class="row">
+                                <div class="images-links-wrap">
+                                    <div class="images-links__bloc col-xs-6 col-sm-3">
+                                        <a href="#">
+                                            <img src="img/admin-admin-link-1.png" alt="">
+                                            <span>Create and send invoice</span>
+                                        </a>
+                                    </div>
+                                    <div class="images-links__bloc col-xs-6 col-sm-3">
+                                        <a href="#">
+                                            <img src="img/admin-admin-link-2.png" alt="">
+                                            <span>Status of sent bills</span>
+                                        </a>
+                                    </div>
+                                    <div class="images-links__bloc col-xs-6 col-sm-3">
+                                        <a href="#">
+                                            <img src="img/admin-admin-link-3.png" alt="">
+                                            <span>Customers</span>
+                                        </a>
+                                    </div>
+                                    <div class="images-links__bloc col-xs-6 col-sm-3">
+                                        <a href="#">
+                                            <img src="img/admin-admin-link-4.png" alt="">
+                                            <span>Help</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--.images-links-->
+
+                    <section class="calculation-wages admin-admin">
+                        <div class="container">
+                            <div class="row">
+                                <h2 class="col-xs-12">Calculate invoice amount or salary:</h2>
+                                <form class="col-lg-4" method="" action="">
+                                    <div class="inputs-enter-number">
+                                        <div class="number-block">
+                                            <label for="invoice-value">Fakturerar (exkl. moms)</label>
+                                            <input id="invoice-value" type="number" name="number" value="10000"> <span>sek</span>
+                                        </div>
+                                        <img src="img/input-arrow-90deg.png" alt="input arrow">
+                                        <div class="number-block">
+                                            <label for="net-value">Brutto lön</label>
+                                            <input id="net-value" type="number" name="number" value="5060"> <span>sek</span>
+                                        </div>
+                                    </div>
+                                </form>
+                                <div class="hidden-result-calculator admin-admin col-lg-8">
+                                    <div class="we-expect col-sm-6">
+                                        <h5>Så här räknar vi:</h5>
+                                        <ul class="we-expect__list">
+                                            <li><span class="list__label">Fakturabelopp (exkl. moms)</span><span class="list-value" id="details-invoice-value">1000</span></li>
+                                            <li><span class="list__label">Frilansjobbarna</span><span class="list-value" id="details-fee">500</span></li>
+                                            <li><span class="list__label">Sociala avgifter</span><span class="list-value" id="details-socials">2271</span></li>
+                                            <li><span class="list__label">Bruttolön (inkl. semesterersättning)</span><span class="list-value" id="details-gross">7229</span></li>
+                                            <li><span class="list__label">Varav semesterersättning</span><span class="list-value" id="details-holiday">775</span></li>
+                                            <li><span class="list__label">Skatt</span><span class="list-value" id="details-tax">2169</span></li>
+                                            <li><span class="list__label">Nettolön (lön efter skatt)</span><span class="list-value" id="details-net">5060</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="how-much-it-cost col-sm-6">
+                                        <h5>Vad kostar det?</h5>
+                                        <p>Vi tar endast 5% per skickad faktura vid standard
+                                            löneutbetalning. Vi har inga månads eller årsavgifter.
+                                            Börja fakturera redan idag.</p>
+                                        <div class="donut-container">
+                                            <img src="img/admin-admin-circle-for-svg.png" alt="chart">
+                                            <div id="donut"></div>
+                                        </div>
+                                    </div>
+                                </div><!--.hidden-result-calculator-->
+                            </div>
+                        </div>
+                    </section><!--.calculation-wages.admin-admin-->
+
+                    <footer class="footer">
+                        <div class="container">
+                            <div class="row">
+                                <div class="clearfix">
+                                    <div class="footer__logo-social col-sm-3 col-md-4 col-lg-3">
+                                        <a class="footer__logo logo pull-left" href="#">
+                                            <img src="img/logo.jpg" alt="logo">
+                                        </a>
+                                        <div class="social">
+                                            <a class="social__icon facebook_icon" href="#" target="_blank"></a>
+                                            <a class="social__icon instagram_icon" href="#" target="_blank"></a>
+                                            <a class="social__icon youtube_icon" href="#" target="_blank"></a>
+                                            <a class="social__icon google_icon" href="#" target="_blank"></a>
+                                            <a class="social__icon twitter_icon" href="#" target="_blank"></a>
+                                            <a class="social__icon email_icon" href="#" target="_blank"></a>
+                                        </div>
+                                    </div>
+                                    <div class="footer-contacts col-sm-4 col-md-3 col-lg-offset-2 col-lg-3">
+                                        <h5>Kontakta Oss</h5>
+                                        <p>08-240 250</p>
+                                        <p>info@frilansjobbarna.se</p>
+                                        <p>SMS 076 - 944 90 40</p>
+                                        <p>Måndag - Fredag: 09-17</p>
+                                        <p>Lördag - Söndag: 10-15</p>
+                                        <p>Egenanställda i Sverige AB</p>
+                                        <p>Huvudsta strand 23 C,</p>
+                                        <p>171 73 SOLNA</p>
+                                    </div>
+                                    <div class="footer-partners col-sm-5 col-lg-4 clearfix">
+                                        <h5>Partners</h5>
+                                        <div>
+                                            <img class="footer-vimentis-logo" src="img/footer-vimentis-logo.png"
+                                                 alt="vimentis logo">
+                                            <img class="footer-inkassogram-logo" src="img/footer-inkassogram-logo.png"
+                                                 alt="inkassogram logo">
+                                        </div>
+                                        <div>
+                                            <img class="footer-soderberg-logo" src="img/footer-soderberg-logo.png"
+                                                 alt="soderberg logo">
+                                            <img class="footer-creditsafe-logo" src="img/footer-creditsafe-logo.png"
+                                                 alt="creditsafe logo">
+                                        </div>
+                                    </div>
+                                </div><!--.clearfix-->
+                                <p class="copyrigh">&#169; 2017 Egenanställda i Sverige AB (559098-7292) | Godkänd för
+                                    F-skatt</p>
+                                <div class="footer_scroll-up" id="js-scroll-up">
+                                    <img src="img/scrollUp-up.jpg" alt="scroll up">
+                                </div>
+                            </div>
+                        </div>
+                    </footer><!--.footer-->
+                </div><!--.row-->
+            </div><!--.container-fluid-->
+        </div><!--.page-->
+    </body>
+</html>
+

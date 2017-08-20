@@ -1,0 +1,419 @@
+@charset "utf-8";
+
+.how-it-work {
+  padding: 65px 0 80px;
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+
+    .how-it-work__freelancer {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding-left: 0;
+
+      h3 {
+        margin-left: 40px;
+        width: 65%;
+        font-size: 28px;
+        font-weight: 600;
+        color: #333;
+
+      }
+
+      .freelancer__list-wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        ul {
+          margin-top: 23px;
+          width: 100%;
+          list-style: none;
+          margin-bottom: 55px;
+
+          li {
+            font-size: 24px;
+            color: #333;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-start;
+
+            .fa-check {
+              font-size: 30px;
+              color: #ea2f2f;
+            }
+
+            span {
+              margin-left: 30px;
+              font-size: 24px;
+              color: #333;
+            }
+
+            ul {
+              margin-top: 0px;
+              margin-bottom: 0;
+            }
+          }
+        }
+
+        form {
+          margin-right: 155px;
+        }
+      }
+    }
+
+    .how-it-work__outsourcer {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      padding-left: 0;
+
+      h3 {
+        margin-left: 40px;
+        width: 65%;
+        font-size: 28px;
+        font-weight: 600;
+        color: #333;
+
+      }
+
+      .outsourcer__list-wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+
+        ul {
+          margin-top: 23px;
+          width: 100%;
+          list-style: none;
+          margin-bottom: 55px;
+
+          li {
+            font-size: 24px;
+            color: #333;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-start;
+
+            .fa-check {
+              font-size: 30px;
+              color: #ea2f2f;
+            }
+
+            span {
+              margin-left: 30px;
+              font-size: 24px;
+              color: #333;
+            }
+
+            ul {
+              margin-top: 0px;
+              margin-bottom: 0;
+            }
+          }
+        }
+
+        form {
+          margin-right: 155px;
+        }
+      }
+    }
+  }
+}
+
+.hidden-list {
+  display: none;
+}
+
+@include adaptive(max1199) {
+   .how-it-work {
+
+     .row {
+
+       .how-it-work__freelancer {
+         padding-left: 15px;
+
+         .freelancer__list-wrap {
+
+           ul {
+
+             li {
+               font-size: 22px;
+
+               .fa-check {
+                 font-size: 28px;
+               }
+
+               span {
+                 margin-left: 30px;
+                 font-size: 22px;
+               }
+             }
+           }
+
+           form {
+             margin-right: 0;
+           }
+         }
+       }
+
+       .how-it-work__outsourcer {
+         padding-left: 15px;
+
+         .outsourcer__list-wrap {
+
+           ul {
+
+             li {
+               font-size: 22px;
+
+               .fa-check {
+                 font-size: 28px;
+               }
+
+               span {
+                 margin-left: 30px;
+                 font-size: 22px;
+               }
+             }
+           }
+
+           form {
+             margin-right: 0;
+           }
+         }
+       }
+     }
+   }
+ }
+
+@include adaptive(max991) {
+   .how-it-work {
+
+     .row {
+       .how-it-work__freelancer {
+         h3 {
+           width: 90%;
+           font-size: 24px;
+         }
+
+         .freelancer__list-wrap {
+           width: 100%;
+
+           ul {
+
+             li {
+               margin-bottom: 5px;
+               font-size: 20px;
+
+               .fa-check {
+                 font-size: 28px;
+               }
+
+               span {
+                 margin-left: 20px;
+                 font-size: 20px;
+               }
+             }
+           }
+
+           form {
+             margin-right: 0;
+           }
+         }
+       }
+
+       .how-it-work__outsourcer {
+
+         h3 {
+           width: 90%;
+           font-size: 24px;
+         }
+
+         .outsourcer__list-wrap {
+           width: 100%;
+
+           ul {
+
+             li {
+               margin-bottom: 5px;
+               font-size: 20px;
+
+               .fa-check {
+                 font-size: 28px;
+               }
+
+               span {
+                 margin-left: 20px;
+                 font-size: 20px;
+               }
+             }
+           }
+
+           form {
+             margin-right: 0;
+           }
+         }
+       }
+     }
+   }
+ }
+
+@include adaptive(max767) {
+  .how-it-work {
+    padding: 30px 0 55px;
+
+    .row {
+      display: block;
+
+      .how-it-work__freelancer {
+        margin-bottom: 30px;
+
+        h3 {
+          margin-left: 0;
+          padding-right: 15px;
+          padding-left: 15px;
+          width: 100%;
+          font-size: 22px;
+          text-align: center;
+        }
+
+        .freelancer__list-wrap {
+
+          ul {
+            margin-top: 15px;
+            margin-right: auto;
+            margin-bottom: 25px;
+            margin-left: auto;
+            width: auto;
+
+            li {
+              font-size: 18px;
+
+              .fa-check {
+                font-size: 28px;
+              }
+
+              span {
+                font-size: 18px;
+              }
+            }
+          }
+        }
+      }
+
+      .how-it-work__outsourcer {
+
+        h3 {
+          margin-left: 0;
+          padding-right: 15px;
+          padding-left: 15px;
+          width: 100%;
+          font-size: 22px;
+          text-align: center;
+        }
+
+        .outsourcer__list-wrap {
+
+          ul {
+            margin-top: 15px;
+            margin-right: auto;
+            margin-bottom: 25px;
+            margin-left: auto;
+            width: auto;
+
+            li {
+              font-size: 18px;
+
+              .fa-check {
+                font-size: 28px;
+              }
+
+              span {
+                font-size: 18px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include adaptive(max480) {
+  .how-it-work {
+    padding: 20px 0 45px;
+
+    .row {
+
+      .how-it-work__freelancer {
+        margin-bottom: 20px;
+
+        h3 {
+          font-size: 20px;
+        }
+
+        .freelancer__list-wrap {
+
+          ul {
+            margin-top: 10px;
+            margin-bottom: 20px;
+
+            li {
+              font-size: 16px;
+
+              .fa-check {
+                font-size: 22px;
+              }
+
+              span {
+                font-size: 16px;
+              }
+            }
+          }
+        }
+      }
+
+      .how-it-work__outsourcer {
+
+        h3 {
+          font-size: 20px;
+        }
+
+        .outsourcer__list-wrap {
+
+          ul {
+            margin-top: 10px;
+            margin-bottom: 20px;
+
+            li {
+              font-size: 16px;
+
+              .fa-check {
+                font-size: 22px;
+              }
+
+              span {
+                font-size: 16px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+

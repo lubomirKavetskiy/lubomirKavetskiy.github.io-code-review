@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>sign-up</title>
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <link rel="icon" type="image/vnd.microsoft.icon" href="img/favicon.ico">
+        <!--<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">-->
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
+        <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+        <!--<script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>-->
+        <!--<script src="js/morris.js"></script>-->
+        <!--<script src="js/bootstrap.js"></script>-->
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+        <div class="page">
+
+            <div class="container-fluid">
+                <div class="row">
+
+                    <header class="header admin registration">
+                        <div class="container">
+                            <div class="row">
+                                <a class="header__logo logo pull-left" href="#">
+                                    <img src="img/logo.jpg" alt="logo">
+                                </a>
+                                <a href="#" class="link-log-in pull-right">Logga in</a>
+                                <a href="#" class="link-home pull-right"><i class="fa fa-home"></i><span >Tilbaka till hemsidan</span></a>
+                            </div>
+                        </div>
+                    </header>
+
+                    <div class="login__wrapper">
+                        <a href="#" class="btn-beoro-3"><i class="fa fa-home"></i>Tillbaka till hemsidan</a>
+
+                        <div class="login__content text-center">
+
+                            <form id="login-validate" action="#" method="post">
+                                    <select class="reg_user_selecttype" name="reg_user_type" onchange="registrationUserType()">
+                                        <option value="0" selected="">Client</option>
+                                        <option value="1">Freelancer</option>
+                                    </select>
+                                <div class="reg_user_form_client">
+                                    <label>First name:<input type="text" name="RUFC_firstname"></label>
+                                    <label>Last name: <input type="text" name="RUFC_lastname"></label>
+                                    <label>Company name: <input type="text" name="RUFC_compname"></label>
+                                    <label>Company address:<input type="text" name="RUFC_compaddress"></label>
+                                    <label>Country:
+                                        <select class="reg_country_selecttype" name="RUFC_country">";
+                                            <option value="1">* Sverige *</option>
+                                            <option value="2">* NORWAY *</option>
+                                            <option value="3">* FINLAND *</option>
+                                            <option value="4">* DENMARK *</option>
+                                            <option value="5">* BELGIUM *</option>
+                                            <option value="6">* GERMANY *</option>
+                                            <option value="7">* FRANCE *</option>
+                                            <option value="8">* POLAND *</option>
+                                            <option value="9">* NETHERLANDS *</option>
+                                            <option value="10">* SWITZERLAND *</option>
+                                            <option value="11">* AUSTRIA *</option>
+                                            <option value="12">* ITALY *</option>
+                                            <option value="13">* HUNGARY *</option>
+                                            <option value="14">* UNITED KINGDOM *</option>
+                                            <option value="15">* SPAIN *</option>
+                                            <option value="16">* GREECE *</option>
+                                            <option value="17">* BULGARIA *</option>
+                                            <option value="18">* ICELAND *</option>
+                                            <option value="19">* USA *</option>
+                                        </select>
+                                    </label>
+                                    <label>E-mail: <input type="email" name="RUFC_email"></label>
+                                </div>
+                                <div class="reg_user_form_freelancer">
+                                    <label for="login_firstname">Förnamn:</label>
+                                    <input type="text" id="login_firstname" name="frmFName" placeholder="Ditt förnamn" value="">
+
+                                    <label for="login_lastname">Efternamn:</label>
+                                    <input type="text" id="login_lastname" name="frmSName" placeholder="Ditt efternamn" value="">
+
+                                    <label for="login_email">E-post:</label>
+                                    <input type="text" id="login_email" name="frmEmail" placeholder="Din E-postadress" value="">
+                                </div>
+                                <div class="reg_user_form_freelancer">
+
+                                </div>
+
+                                <p>
+                                    <button type="submit" class="btn-beoro-3">Registrera konto</button>
+                                    <a href="#">Logga in</a>
+                                </p>
+                            </form>
+                            <p>Denna webbplats använder <a class="dialog_cookie" href="#" title="Information om cookies">cookies</a></p>
+                        </div><!--.login__content-->
+                    </div><!--.login__wrapper-->
+
+                    <div class="registration__footer">
+                        <span>&#169; 2017 </span><a href="#">Frilansjobbarna Dev</a>
+                    </div>
+
+                </div><!--.row-->
+            </div><!--.container-fluid-->
+
+        </div><!--.page-->
+    </body>
+</html>

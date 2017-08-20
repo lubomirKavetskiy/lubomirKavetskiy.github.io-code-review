@@ -1,0 +1,224 @@
+{
+    "data": [
+        [
+            "5820",
+            "205",
+            "Frilansjobbarna i Norden AB",
+            "2017-06-11",
+            "Nej",
+            "<a href='#'><img src='img/pdf.png'/></a>",
+            "<a href='#'><img src='img/book.png'/></a>",
+            "<a href='#' class='decline-confirm-link'><img src='img/decline.png'/></a><a href='#' class='decline-confirm-link'><img src='img/confirm.png'/></a>"
+        ],
+        [
+            "5820",
+            "205",
+            "Frilansjobbarna i Norden AB",
+            "2017-06-11",
+            "Nej",
+            "<a href='#'><img src='img/pdf.png'/></a>",
+            "<a href='#'><img src='img/book.png'/></a>",
+            "<a href='#' class='decline-confirm-link'><img src='img/decline.png'/></a><a href='#' class='decline-confirm-link'><img src='img/confirm.png'/></a>"
+        ],
+        [
+            "5820",
+            "205",
+            "Frilansjobbarna i Norden AB",
+            "2017-06-11",
+            "Nej",
+            "<a href='#'><img src='img/pdf.png'/></a>",
+            "<a href='#'><img src='img/book.png'/></a>",
+            "<a href='#' class='decline-confirm-link'><img src='img/decline.png'/></a><a href='#' class='decline-confirm-link'><img src='img/confirm.png'/></a>"
+        ],
+        [
+            "5820",
+            "205",
+            "Frilansjobbarna i Norden AB",
+            "2017-06-11",
+            "Nej",
+            "<a href='#'><img src='img/pdf.png'/></a>",
+            "<a href='#'><img src='img/book.png'/></a>",
+            "<a href='#' class='decline-confirm-link'><img src='img/decline.png'/></a><a href='#' class='decline-confirm-link'><img src='img/confirm.png'/></a>"
+        ],
+        [
+            "5820",
+            "205",
+            "Frilansjobbarna i Norden AB",
+            "2017-06-11",
+            "Nej",
+            "<a href='#'><img src='img/pdf.png'/></a>",
+            "<a href='#'><img src='img/book.png'/></a>",
+            "<a href='#' class='decline-confirm-link'><img src='img/decline.png'/></a><a href='#' class='decline-confirm-link'><img src='img/confirm.png'/></a>"
+        ],
+        [
+            "5820",
+            "205",
+            "Frilansjobbarna i Norden AB",
+            "2017-06-11",
+            "Nej",
+            "<a href='#'><img src='img/pdf.png'/></a>",
+            "<a href='#'><img src='img/book.png'/></a>",
+            "<a href='#' class='decline-confirm-link'><img src='img/decline.png'/></a><a href='#' class='decline-confirm-link'><img src='img/confirm.png'/></a>"
+        ],
+        [
+            "5820",
+            "205",
+            "Frilansjobbarna i Norden AB",
+            "2017-06-11",
+            "Nej",
+            "<a href='#'><img src='img/pdf.png'/></a>",
+            "<a href='#'><img src='img/book.png'/></a>",
+            "<a href='#' class='decline-confirm-link'><img src='img/decline.png'/></a><a href='#' class='decline-confirm-link'><img src='img/confirm.png'/></a>"
+        ],
+        [
+            "5820",
+            "205",
+            "Frilansjobbarna i Norden AB",
+            "2017-06-11",
+            "Nej",
+            "<a href='#'><img src='img/pdf.png'/></a>",
+            "<a href='#'><img src='img/book.png'/></a>",
+            "<a href='#' class='decline-confirm-link'><img src='img/decline.png'/></a><a href='#' class='decline-confirm-link'><img src='img/confirm.png'/></a>"
+        ],
+        [
+            "5820",
+            "205",
+            "Frilansjobbarna i Norden AB",
+            "2017-06-11",
+            "Nej",
+            "<a href='#'><img src='img/pdf.png'/></a>",
+            "<a href='#'><img src='img/book.png'/></a>",
+            "<a href='#' class='decline-confirm-link'><img src='img/decline.png'/></a><a href='#' class='decline-confirm-link'><img src='img/confirm.png'/></a>"
+        ],
+        [
+            "5820",
+            "205",
+            "Frilansjobbarna i Norden AB",
+            "2017-06-11",
+            "Nej",
+            "<a href='#'><img src='img/pdf.png'/></a>",
+            "<a href='#'><img src='img/book.png'/></a>",
+            "<a href='#' class='decline-confirm-link'><img src='img/decline.png'/></a><a href='#' class='decline-confirm-link'><img src='img/confirm.png'/></a>"
+        ],
+        [
+            "5820",
+            "205",
+            "Frilansjobbarna i Norden AB",
+            "2017-06-11",
+            "Nej",
+            "<a href='#'><img src='img/pdf.png'/></a>",
+            "<a href='#'><img src='img/book.png'/></a>",
+            "<a href='#' class='decline-confirm-link'><img src='img/decline.png'/></a><a href='#' class='decline-confirm-link'><img src='img/confirm.png'/></a>"
+        ],
+        [
+            "5820",
+            "205",
+            "Frilansjobbarna i Norden AB",
+            "2017-06-11",
+            "Nej",
+            "<a href='#'><img src='img/pdf.png'/></a>",
+            "<a href='#'><img src='img/book.png'/></a>",
+            "<a href='#' class='decline-confirm-link'><img src='img/decline.png'/></a><a href='#' class='decline-confirm-link'><img src='img/confirm.png'/></a>"
+        ],
+        [
+            "5820",
+            "205",
+            "Frilansjobbarna i Norden AB",
+            "2017-06-11",
+            "Nej",
+            "<a href='#'><img src='img/pdf.png'/></a>",
+            "<a href='#'><img src='img/book.png'/></a>",
+            "<a href='#' class='decline-confirm-link'><img src='img/decline.png'/></a><a href='#' class='decline-confirm-link'><img src='img/confirm.png'/></a>"
+        ],
+        [
+            "5820",
+            "205",
+            "Frilansjobbarna i Norden AB",
+            "2017-06-11",
+            "Nej",
+            "<a href='#'><img src='img/pdf.png'/></a>",
+            "<a href='#'><img src='img/book.png'/></a>",
+            "<a href='#' class='decline-confirm-link'><img src='img/decline.png'/></a><a href='#' class='decline-confirm-link'><img src='img/confirm.png'/></a>"
+        ],
+        [
+            "5820",
+            "205",
+            "Frilansjobbarna i Norden AB",
+            "2017-06-11",
+            "Nej",
+            "<a href='#'><img src='img/pdf.png'/></a>",
+            "<a href='#'><img src='img/book.png'/></a>",
+            "<a href='#' class='decline-confirm-link'><img src='img/decline.png'/></a><a href='#' class='decline-confirm-link'><img src='img/confirm.png'/></a>"
+        ],
+        [
+            "5820",
+            "205",
+            "Frilansjobbarna i Norden AB",
+            "2017-06-11",
+            "Nej",
+            "<a href='#'><img src='img/pdf.png'/></a>",
+            "<a href='#'><img src='img/book.png'/></a>",
+            "<a href='#' class='decline-confirm-link'><img src='img/decline.png'/></a><a href='#' class='decline-confirm-link'><img src='img/confirm.png'/></a>"
+        ],
+        [
+            "5820",
+            "205",
+            "Frilansjobbarna i Norden AB",
+            "2017-06-11",
+            "Nej",
+            "<a href='#'><img src='img/pdf.png'/></a>",
+            "<a href='#'><img src='img/book.png'/></a>",
+            "<a href='#' class='decline-confirm-link'><img src='img/decline.png'/></a><a href='#' class='decline-confirm-link'><img src='img/confirm.png'/></a>"
+        ],
+        [
+            "5820",
+            "205",
+            "Frilansjobbarna i Norden AB",
+            "2017-06-11",
+            "Nej",
+            "<a href='#'><img src='img/pdf.png'/></a>",
+            "<a href='#'><img src='img/book.png'/></a>",
+            "<a href='#' class='decline-confirm-link'><img src='img/decline.png'/></a><a href='#' class='decline-confirm-link'><img src='img/confirm.png'/></a>"
+        ],
+        [
+            "5820",
+            "205",
+            "Frilansjobbarna i Norden AB",
+            "2017-06-11",
+            "Nej",
+            "<a href='#'><img src='img/pdf.png'/></a>",
+            "<a href='#'><img src='img/book.png'/></a>",
+            "<a href='#' class='decline-confirm-link'><img src='img/decline.png'/></a><a href='#' class='decline-confirm-link'><img src='img/confirm.png'/></a>"
+        ],
+        [
+            "5820",
+            "205",
+            "Frilansjobbarna i Norden AB",
+            "2017-06-11",
+            "Nej",
+            "<a href='#'><img src='img/pdf.png'/></a>",
+            "<a href='#'><img src='img/book.png'/></a>",
+            "<a href='#' class='decline-confirm-link'><img src='img/decline.png'/></a><a href='#' class='decline-confirm-link'><img src='img/confirm.png'/></a>"
+        ],
+        [
+            "5820",
+            "205",
+            "Frilansjobbarna i Norden AB",
+            "2017-06-11",
+            "Nej",
+            "<a href='#'><img src='img/pdf.png'/></a>",
+            "<a href='#'><img src='img/book.png'/></a>",
+            "<a href='#' class='decline-confirm-link'><img src='img/decline.png'/></a><a href='#' class='decline-confirm-link'><img src='img/confirm.png'/></a>"
+        ],
+        [
+            "5820",
+            "205",
+            "Frilansjobbarna i Norden AB",
+            "2017-06-11",
+            "Nej",
+            "<a href='#'><img src='img/pdf.png'/></a>",
+            "<a href='#'><img src='img/book.png'/></a>",
+            "<a href='#' class='decline-confirm-link'><img src='img/decline.png'/></a><a href='#' class='decline-confirm-link'><img src='img/confirm.png'/></a>"
+        ]
+    ]
+}

@@ -1,0 +1,379 @@
+@charset "utf-8";
+
+.form-button {
+  display: inline-block;
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  border: 2px solid #ea2f2f;
+  background-color: #FFF;
+}
+
+//=====================================//
+// .header "button-login"
+
+.button-login {
+  width: 170px;
+  height: 60px;
+  z-index: 2;
+
+  position: relative;
+
+  font-size: 18px;
+  letter-spacing: 0;
+  color: #ea2f2f;
+
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s ease all;
+
+  &:before {
+    -webkit-transition: 0.5s all ease;
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    background-color: #ea2f2f;
+    z-index: -2;
+  }
+
+  &:hover {
+    color: #FFF;
+
+    &:before {
+      -webkit-transition: 0.5s all ease;
+      transition: 0.5s all ease;
+      left: 0;
+      right: 0;
+      opacity: 1;
+    }
+  }
+
+  &:focus {
+    color: #FFF;
+
+    &:before {
+      transition: 0.5s all ease;
+      left: 0;
+      right: 0;
+      opacity: 1;
+    }
+  }
+}
+//=====================================//
+
+//=====================================//
+// .banner-profession "button-left", "button-right"
+
+.button-left {
+  margin-right: 10px;
+  display: inline-block;
+  width: 270px;
+  height: 70px;
+
+  font-size: 24px;
+  color: #FFF;
+  background-color: #ea2f2f;
+
+  box-shadow: inset 0 0 0 0 #FFF;
+  transition: all 0.5s ease;
+}
+
+.button-left-hover {
+  box-shadow: inset 270px 0 0 0 #FFF;
+  color: #ea2f2f;
+}
+
+.button-right {
+  margin-left: 10px;
+  display: inline-block;
+  width: 270px;
+  height: 70px;
+
+  font-size: 24px;
+  color: #ea2f2f;
+
+  transition: all 0.5s ease;
+  box-shadow: inset 0 0 0 0 #ea2f2f;
+}
+
+.button-right-hover{
+  box-shadow: inset 270px 0 0 0 #ea2f2f;
+  color: #FFF;
+}
+//=====================================//
+
+//===================================//
+// .how it work "read more"
+.read-more {
+  width: 270px;
+  height: 70px;
+  font-size: 20px;
+  color: #ea2f2f;
+  z-index: 2;
+  position: relative;
+  overflow:hidden;
+  z-index: 1;
+  transition:         0.08s ease-in;
+  -o-transition:      0.08s ease-in;
+  -ms-transition:     0.08s ease-in;
+  -moz-transition:    0.08s ease-in;
+  -webkit-transition: 0.08s ease-in;
+
+  &:hover {
+    color: #FFF;
+  }
+}
+
+.read-more:before {
+  content: "";
+  position: absolute;
+  background: #ea2f2f;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 100%;
+  z-index: -1;
+  -webkit-transition: top 0.09s ease-in;
+}
+
+.read-more:hover:before {
+  top: 0;
+}
+//===================================//
+
+//=====================================//
+// .why-it-easier "button-center"
+.button-center {
+  width: 270px;
+  height: 70px;
+  z-index: 2;
+  position: relative;
+
+  background-color: #ea2f2f;
+  color: #FFF;
+  font-size: 24px;
+
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s ease all;
+
+  &:before {
+    -webkit-transition: 0.5s all ease;
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    background-color: #FFF;
+    z-index: -2;
+  }
+
+  &:hover {
+    color: #ea2f2f;
+
+    &:before {
+      -webkit-transition: 0.5s all ease;
+      transition: 0.5s all ease;
+      left: 0;
+      right: 0;
+      opacity: 1;
+    }
+  }
+
+  &:focus {
+    color: #ea2f2f;
+
+    &:before {
+      transition: 0.5s all ease;
+      left: 0;
+      right: 0;
+      opacity: 1;
+    }
+  }
+}
+//=====================================//
+
+
+//=====================================//
+// admin-admin "button-dropdown-list"
+.button-dropdown-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 170px;
+  height: 60px;
+
+  background-color: #333;
+  border: 2px solid #FFF;
+
+  z-index: 100;
+
+  span {
+    font-size: 16px;
+    color: #FFF;
+
+    &:last-child {
+      color: #999;
+    }
+  }
+
+  z-index: 2;
+
+  position: relative;
+
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s ease all;
+
+  &:before {
+    -webkit-transition: 0.5s all ease;
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    background-color: #FFF;
+    z-index: -2;
+  }
+
+  &:hover {
+    span {
+      color: #999;
+
+      &:last-child {
+        color: #000;
+      }
+    }
+
+    &:before {
+      -webkit-transition: 0.5s all ease;
+      transition: 0.5s all ease;
+      left: 0;
+      right: 0;
+      opacity: 1;
+    }
+  }
+
+  &:focus {
+
+    span {
+      color: #999;
+
+      &:before {
+        transition: 0.5s all ease;
+        left: 0;
+        right: 0;
+        opacity: 1;
+      }
+    }
+  }
+}
+//=====================================//
+
+@include adaptive(max1199) {
+  .button-login,
+  .button-dropdown-list {
+    width: 160px;
+    height: 55px;
+  }
+
+  .button-left,
+  .button-right,
+  .read-more,
+  .button-center {
+    width: 260px;
+    height: 65px;
+  }
+}
+
+@include adaptive(max991) {
+  .button-login,
+  .button-dropdown-list {
+    width: 150px;
+    height: 50px;
+  }
+
+  .button-left,
+  .button-right,
+  .read-more,
+  .button-center {
+    width: 230px;
+    height: 55px;
+
+    font-size: 21px;
+  }
+}
+
+@include adaptive(max767) {
+  .button-login,
+  .button-dropdown-list {
+    width: 145px;
+  }
+
+  .button-left,
+  .button-right,
+  .read-more,
+  .button-center {
+    width: 200px;
+
+    font-size: 20px;
+  }
+}
+
+@include adaptive(max480) {
+  .button-login{
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  .button-dropdown-list {
+    width: 90px;
+    height: 40px;
+    font-size: 16px;
+
+    span {
+      font-size: 15px;
+    }
+  }
+
+  .button-left,
+  .button-right {
+    margin-right: 5px;
+    width: 140px;
+    height: 40px;
+
+    font-size: 16px;
+  }
+
+  .button-right {
+    margin-left: 5px;
+  }
+
+  .button-center,
+  .read-more {
+    width: 140px;
+    height: 40px;
+
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,455 @@
+@charset "utf-8";
+
+.calculation-wages {
+  padding: 76px 0 73px;
+
+  h2 {
+    color: #333;
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-weight: 600;
+  }
+
+  form {
+
+    #age-select-container {
+      min-height: 40px;
+
+      .col-sm-2:first-child {
+        padding-left: 0;
+      }
+
+      .ask {
+        font-size: 25px;
+        font-weight: 300;
+      }
+
+      .calc-age-control {
+        padding-right: 0;
+        padding-left: 0;
+
+        &:last-child {
+          padding-right: 0;
+          padding-left: 15px;
+        }
+
+        input[type="radio"] {
+          position: absolute;
+          opacity: 0;
+
+          + .calc-age-control__label {
+            font-size: 25px;
+            font-weight: 300;
+
+            &:before {
+              content: '';
+              background: #FFF;
+              border-radius: 100%;
+              border: 1px solid #cdcdcd;
+              display: inline-block;
+              width: 30px;
+              height: 30px;
+              position: relative;
+              top: 5px;
+              margin-right: 20px;
+              vertical-align: top;
+              cursor: pointer;
+              text-align: center;
+              transition: all 250ms ease;
+            }
+          }
+          &:checked {
+
+            + .calc-age-control__label {
+
+              &:before {
+                background-color: #ea2f2f;
+                box-shadow: inset 0 0 0 4px #FFF;
+              }
+            }
+          }
+          &:focus {
+
+            + .calc-age-control__label {
+
+              &:before {
+                outline: none;
+                border-color: #ea2f2f;
+              }
+            }
+          }
+          &:disabled {
+
+            + .calc-age-control__label {
+
+              &:before {
+                box-shadow: inset 0 0 0 4px #FFF;
+                border-color: #000;
+                background: #000;
+              }
+            }
+          }
+          + .calc-age-control__label {
+
+            &:empty {
+
+              &:before {
+                margin-right: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+    .inputs-enter-number {
+      margin-top: 59px;
+      margin-bottom: 95px;
+
+      .number-block {
+        display: inline-block;
+        vertical-align: top;
+
+        &:last-child {
+
+          input {
+            font-weight: 600;
+            color: #ea2f2f;
+          }
+        }
+
+        label {
+          margin-bottom: 12px;
+          display: block;
+          font-size: 18px;
+          color: #333;
+          text-align: left;
+        }
+
+        input {
+          padding: 0 10px;
+          width: 370px;
+          height: 80px;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+          font-size: 32px;
+          font-weight: 300;
+          color: #000;
+          border: 1px solid #CCC;
+        }
+
+        span {
+          margin-top: 12px;
+          display: block;
+          font-size: 18px;
+          color: #CCC;
+          font-weight: 300;
+          text-align: left;
+        }
+      }
+
+      img {
+        display: inline-block;
+        vertical-align: top;
+        margin: 55px 65px 0;
+      }
+    }
+
+    .calculation-wages__buttons {
+      margin-top: 96px;
+    }
+  }
+}
+
+@include adaptive(max1199) {
+  .calculation-wages {
+    padding: 70px 0 70px;
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 35px;
+    }
+
+    form {
+
+      #age-select-container {
+        min-height: 33px;
+
+
+        .ask {
+          font-size: 24px;
+        }
+
+        .calc-age-control {
+
+          input[type="radio"] {
+
+            + .calc-age-control__label {
+              font-size: 24px;
+
+              &:before {
+                width: 28px;
+                height: 28px;
+                top: 4px;
+                margin-right: 10px;
+              }
+            }
+          }
+        }
+      }
+      .inputs-enter-number {
+        margin-top: 55px;
+        margin-bottom: 80px;
+
+        .number-block {
+
+          label {
+            margin-bottom: 11px;
+            font-size: 17px;
+          }
+
+          input {
+            width: 350px;
+            height: 70px;
+            font-size: 30px;
+          }
+
+          span {
+            margin-top: 11px;
+            font-size: 17px;
+          }
+        }
+
+        img {
+          margin: 50px 55px 0;
+        }
+      }
+
+      .calculation-wages__buttons {
+        margin-top: 85px;
+      }
+    }
+  }
+}
+
+@include adaptive(max991) {
+  .calculation-wages {
+    padding: 60px 0;
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 25px;
+    }
+
+    form {
+
+      #age-select-container {
+        min-height: 33px;
+
+        .ask {
+          font-size: 20px;
+        }
+
+        .calc-age-control {
+
+          input[type="radio"] {
+
+            + .calc-age-control__label {
+              font-size: 20px;
+
+              &:before {
+                width: 24px;
+                height: 24px;
+                top: 4px;
+                margin-right: 10px;
+              }
+            }
+          }
+        }
+      }
+      .inputs-enter-number {
+        margin-top: 50px;
+        margin-bottom: 70px;
+
+        .number-block {
+
+          label {
+            margin-bottom: 10px;
+            font-size: 17px;
+          }
+
+          input {
+            width: 300px;
+            height: 60px;
+            font-size: 26px;
+          }
+
+          span {
+            margin-top: 10px;
+            font-size: 17px;
+          }
+        }
+
+        img {
+          margin: 41px 40px 0;
+        }
+      }
+
+      .calculation-wages__buttons {
+        margin-top: 70px;
+      }
+    }
+  }
+}
+
+@include adaptive(max767) {
+  .calculation-wages {
+    padding: 55px 10px;
+
+    h2 {
+      font-size: 26px;
+      margin-bottom: 30px;
+    }
+
+    form {
+
+      #age-select-container {
+        min-height: 60px;
+
+        .col-sm-2:first-child {
+          padding-left: 15px;
+        }
+
+
+        .calc-age-control {
+          padding-right: 15px;
+          padding-left: 15px;
+
+          &:last-child {
+            padding-right: 15px;
+          }
+        }
+      }
+      .inputs-enter-number {
+        margin-top: 40px;
+        margin-bottom: 50px;
+
+        .number-block {
+          display: block;
+
+          label {
+            margin-bottom: 7px;
+            font-size: 16px;
+            text-align: center;
+          }
+
+          input {
+            width: 350px;
+          }
+
+          span {
+            margin-top: 7px;
+            font-size: 16px;
+            text-align: center;
+          }
+        }
+
+        img {
+          margin: 25px 0;
+        }
+      }
+
+      .calculation-wages__buttons {
+        margin-top: 50px;
+      }
+    }
+  }
+}
+
+@include adaptive(max480) {
+  .calculation-wages {
+    padding: 45px 10px;
+
+    h2 {
+      font-size: 19px;
+      margin-bottom: 20px;
+    }
+
+    form {
+
+      #age-select-container {
+        min-height: 50px;
+
+
+        .ask {
+          font-size: 17px;
+        }
+
+        .calc-age-control {
+
+          input[type="radio"] {
+
+            + .calc-age-control__label {
+              font-size: 17px;
+
+              &:before {
+                width: 22px;
+                height: 22px;
+                top: 3px;
+                margin-right: 10px;
+              }
+            }
+          }
+        }
+      }
+      .inputs-enter-number {
+        margin-top: 40px;
+        margin-bottom: 45px;
+
+        .number-block {
+          display: block;
+
+          label {
+            margin-bottom: 5px;
+            font-size: 15px;
+          }
+
+          input {
+            padding: 0 5px;
+            width: 280px;
+            height: 50px;
+            font-size: 24px
+          }
+
+          span {
+            margin-top: 5px;
+            font-size: 15px;
+            text-align: center;
+          }
+        }
+
+        img {
+          margin: 12px 0;
+        }
+      }
+
+      .calculation-wages__buttons {
+        margin-top: 35px;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

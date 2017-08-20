@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+.header.registration {
+  .row {
+    padding: 45px 0;
+  }
+
+  .fa.fa-home {
+    font-size: 20px;
+    color: #b11616;
+  }
+
+  .link-log-in {
+    display: inline-block;
+    vertical-align: top;
+    width: 167px;
+    padding-left: 30px;
+    font-size: 18px;
+    letter-spacing: 0px;
+    color: #b11616;
+  }
+
+  .link-home {
+    display: inline-block;
+    vertical-align: top;
+    border-right: 2px solid #b11616;
+
+    & span {
+      margin-left: 10px;
+      padding-right: 30px;
+      font-size: 18px;
+      letter-spacing: 0px;
+      color: #b11616;
+    }
+  }
+
+}

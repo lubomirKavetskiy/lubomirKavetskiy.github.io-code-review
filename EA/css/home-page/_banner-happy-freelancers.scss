@@ -1,0 +1,138 @@
+@charset "utf-8";
+
+.banner-happy-freelancers {
+  position: relative;
+
+
+  img {
+    width: 100%;
+    margin: -0.5px auto;
+    //padding: 110px 0 125px 72px;
+  }
+
+  .banner-happy-freelancers__wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 0;
+    left:0;
+    height: 100%;
+
+    width: 50%;
+
+    .banner-happy-freelancers-article {
+      padding-left: 65px;
+      text-align: left;
+
+      h3 {
+        color: #FFF;
+        font-size: 28px;
+        font-weight: 600;
+      }
+
+      blockquote {
+        margin: 35px 0 20px;
+        padding: 0;
+        line-height: 1.45;
+        font-size: 20px;
+        letter-spacing: .1px;
+        color: #FFF;
+        border: none;
+      }
+    }
+  }
+}
+
+@include adaptive(max1500) {
+  .banner-happy-freelancers {
+
+    .banner-happy-freelancers__wrap {
+
+      .banner-happy-freelancers-article {
+        padding-left: 60px;
+
+        h3 {
+          font-size: 26px;
+        }
+
+        blockquote {
+          margin: 30px 0 15px;
+          line-height: 1.4;
+          font-size: 19px;
+        }
+      }
+    }
+  }
+}
+
+@include adaptive(max1199) {
+  .banner-happy-freelancers {
+
+    .banner-happy-freelancers__wrap {
+      position: relative;
+      //top: 99.7%;
+      width: 100%;
+      height: auto;
+
+      .banner-happy-freelancers-article {
+        padding-right: 60px;
+        background-color: #ea2f2f;
+        text-align: justify;
+
+        blockquote {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+
+
+@include adaptive(max991) {
+  .banner-happy-freelancers {
+
+    .banner-happy-freelancers__wrap {
+
+      .banner-happy-freelancers-article {
+        padding-left: 40px;
+        padding-right: 40px;
+
+        h3 {
+          color: #FFF;
+          font-size: 24px;
+        }
+
+        blockquote {
+          font-size: 17px;
+        }
+      }
+    }
+  }
+}
+
+@include adaptive(max767) {
+  .banner-happy-freelancers {
+
+    .banner-happy-freelancers__wrap {
+
+      .banner-happy-freelancers-article {
+        padding-left: 15px;
+        padding-right: 15px;
+
+        h3 {
+          color: #FFF;
+          font-size: 18px;
+          text-align: center;
+        }
+
+        blockquote {
+          margin-top: 20px;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
